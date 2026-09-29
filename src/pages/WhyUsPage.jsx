@@ -42,7 +42,7 @@ export default function WhyUsPage() {
     <div className="page-why-us">
       <PageBanner 
         badge="Trust &amp; Verification"
-        title="Why Choose Vidhnharta Reality"
+        title="Why Choose Vighnharta Reality"
         subtitle="The small details matter when you are choosing land for a very big future. Discover our proven standard of trust."
         image="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=2200&q=85"
         // breadcrumbs={[{ label: 'Why Us' }]}

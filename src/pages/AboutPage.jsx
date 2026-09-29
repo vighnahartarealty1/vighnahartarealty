@@ -48,7 +48,7 @@ export default function AboutPage() {
                   We believe buying land is more than a monetary transaction—it is the foundation of your family's future, a space for peace, and a legacy that endures.
                 </p>
                 <p>
-                  Established in Bhavnagar, Vidhnharta Reality was founded to bring clarity, honesty, and verified legal confidence to land acquisition. In a market often complicated by opaque documentation, we operate with complete openness, offering thoughtfully vetted residential plots and farm land with immediate registry readiness.
+                  Established in Mumbai, Vighnaharta Reality was founded to bring clarity, honesty, and verified legal confidence to land acquisition. In a market often complicated by opaque documentation, we operate with complete openness, offering thoughtfully vetted residential plots and farm land with immediate registry readiness.
                 </p>
                 <div className="story-stats-inline">
                   <div>
@@ -88,7 +88,7 @@ export default function AboutPage() {
         <div className="wrap">
           <ScrollReveal animation="fade-up">
             <div className="section-head text-center-wrap">
-              <p className="intro-label">The Vidhnharta Standard</p>
+              <p className="intro-label">The Vighnharta Standard</p>
               <h2>Four Pillars of Our Promise</h2>
               <p>How we ensure every plot we deliver becomes a source of pride and peace of mind.</p>
             </div>
