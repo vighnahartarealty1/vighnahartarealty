@@ -8,12 +8,12 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="wrap footer-inner">
         <div>
-          <Link to="/" className="logo" aria-label="Vidhnharta Reality home">
+          <Link to="/" className="logo" aria-label="Vighnharta Realty home">
             <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true">
               <path d="M15 2 L28 26 H2 Z" fill="none" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
               <circle cx="15" cy="17" r="3" fill="currentColor" />
             </svg>
-            <span>Vidhnharta <em>Reality</em></span>
+            <span>Vighnharta <em>Realty</em></span>
           </Link>
           <p className="tagline">Thoughtfully chosen. Clearly presented.</p>
         </div>
@@ -26,7 +26,7 @@ export default function Footer() {
         </nav>
       </div>
       <div className="wrap copyright">
-        <p>&copy; {year} Vidhnharta Reality. All rights reserved.</p>
+        <p>&copy; {year} Vighnharta Realty. All rights reserved.</p>
       </div>
     </footer>
   );

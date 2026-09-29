@@ -73,7 +73,7 @@ export default function StatsIntro() {
 
         <ScrollReveal animation="fade-up" delay={140}>
           <div className="intro-inner">
-            <p className="intro-label">Welcome to Vidhnharta Reality</p>
+            <p className="intro-label">Welcome to Vighnharta Realty</p>
             <h2>Places with promise. Decisions with clarity.</h2>
             <p>
               From your first enquiry to the day you take possession, we make every step easier with honest details,

@@ -1,5 +1,5 @@
 /* ==========================================================
-  VIDHNHARTA REALITY — SITE DATA
+  VIGHNHARTA REALTY — SITE DATA
    This is the ONLY file you need to edit to update the site.
 
    1. Change your WhatsApp number in SITE below.
@@ -12,8 +12,8 @@ const SITE = {
   // Country code + number, digits only. No +, spaces or dashes.
   whatsappNumber: "919999999999",
   phoneDisplay: "+91 99999 99999",
-  email: "hello@vidhnhartareality.com",
-  address: "Vidhnharta Reality Office, Bhavnagar, Gujarat"
+  email: "hello@Vighnhartareality.com",
+  address: "Vighnharta Realty Office, Bhavnagar, Gujarat"
 };
 
 /* ----------------------------------------------------------
@@ -30,7 +30,7 @@ const SITE = {
 const PROPERTIES = [
   {
     id: 1,
-    name: "Vidhnharta Green County",
+    name: "Vighnharta Green County",
     location: "Bhavnagar",
     type: "Residential Plots",
     description: "A calm residential plotting project designed for families who want open surroundings and an address with room to grow.",
@@ -39,7 +39,7 @@ const PROPERTIES = [
   },
   {
     id: 2,
-    name: "Vidhnharta Sunrise Enclave",
+    name: "Vighnharta Sunrise Enclave",
     location: "Bhavnagar",
     type: "Residential Plots",
     description: "A thoughtfully planned neighbourhood with generous plot options, wide roads and a peaceful setting for your next chapter.",
@@ -48,7 +48,7 @@ const PROPERTIES = [
   },
   {
     id: 3,
-    name: "Vidhnharta Farmview",
+    name: "Vighnharta Farmview",
     location: "Rajkot",
     type: "Farm Plots",
     description: "Open land for a weekend retreat, garden home or long-term investment, surrounded by a quieter landscape.",

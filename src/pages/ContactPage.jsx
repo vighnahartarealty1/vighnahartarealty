@@ -37,7 +37,7 @@ export default function ContactPage() {
     if (!validate()) return;
 
     const lines = [
-      'Hello Vighnharta Reality,',
+      'Hello Vighnharta Realty,',
       '',
       `Name: ${formData.name.trim()}`,
       `Email: ${formData.email.trim()}`,
@@ -129,7 +129,7 @@ export default function ContactPage() {
               {/* Map Area */}
               <div className="ct-map-area">
                 <iframe 
-                  title="Vighnharta Reality Bhavnagar office location"
+                  title="Vighnharta Realty Bhavnagar office location"
                   src="https://www.google.com/maps?q=Waghawadi+Road,+Bhavnagar,+Gujarat+364002&output=embed" 
                   loading="lazy"
                   allowFullScreen
@@ -249,7 +249,7 @@ export default function ContactPage() {
             <div className="section-head text-center-wrap">
               <p className="intro-label">Frequently Asked Questions</p>
               <h2>Got Questions? We've Got Answers</h2>
-              <p>Everything you need to know about buying plots and verified properties with Vighnharta Reality.</p>
+              <p>Everything you need to know about buying plots and verified properties with Vighnharta Realty.</p>
             </div>
           </ScrollReveal>
 

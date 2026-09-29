@@ -25,7 +25,7 @@ export default function VisionSteps() {
       <div className="wrap">
         <ScrollReveal animation="fade-up">
           <div className="section-head">
-            <p className="intro-label">About Vidhnharta Reality</p>
+            <p className="intro-label">About Vighnharta Realty</p>
             <h2>Real estate with a long view.</h2>
             <p>
               We believe a property decision should feel informed, not rushed. Our work is built around trustworthy
