@@ -1,124 +1,293 @@
-/* ==========================================================
-  VIDHNHARTA REALITY — SITE DATA (ES Module)
-   Centralized site configuration, property listings,
-   timeline milestones, and FAQ details.
-   ========================================================== */
+/* =========================================================================
+   VIGHNAHARTA REALTY — MASTER DATA FILE
+   -------------------------------------------------------------------------
+   ➜  EDIT EVERYTHING HERE. No other file needs to be touched for content.
 
-export const SITE = {
-  name: "Vidhnharta Reality",
-  whatsappNumber: "919999999999",
-  phoneDisplay: "+91 99999 99999",
-  email: "hello@vidhnhartareality.com",
-  address: "Vidhnharta Reality Office, Waghawadi Road, Bhavnagar, Gujarat 364002"
+   ⚠ Lines marked  // VERIFY-CLIENT  hold assumed / dummy values (phone, email,
+     address, year, hours, RERA). Get the real ones from the client before launch.
+   ========================================================================= */
+
+const SITE_DATA = {
+
+  /* =====================================================================
+     1. COMPANY INFORMATION
+     ===================================================================== */
+  company: {
+    name: "Vighnaharta Realty",
+    shortName: "Vighnaharta",
+    tagline: "Clear Titles. Confident Investments.",
+    established: "2023", // VERIFY-CLIENT
+    intro:
+      "Vighnaharta Realty helps families and investors buy verified plots in the Mumbai 3.0 belt — Uran, Panvel and Pen — with clean 7/12 records and guidance right up to registration.",
+
+    heroImage:
+      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1800&q=80",
+
+    aboutImage:
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+
+    /* About page paragraphs */
+    about: [
+      "Vighnaharta Realty was created around one idea: buying land in Maharashtra should feel clear, not risky. Most people who want to invest in a plot are ready with the money — what holds them back is the worry about what the paperwork really says. We exist to remove that worry.",
+      "We focus on plots in the Mumbai 3.0 belt, the planned urban region taking shape between Mumbai and Navi Mumbai across Uran, Panvel and Pen. Before any plot is shown to a customer, our team checks the 7/12 extract, cross-verifies the 8A record and traces the title so that ownership is clean from the very start.",
+      "Our way of working is simple. We listen first, take you to the land in person, let you choose at your own pace, and then stay with you through booking, sale deed and mutation. No pressure, no confusing jargon — just a straight process where every decision is backed by documents."
+    ],
+
+    vision:
+      "To be the land and plot partner people across Maharashtra trust first — known for verified records, honest advice and investments that stand strong on paper.",
+
+    mission:
+      "To make plot buying simple and transparent by verifying every record, explaining every step in plain language, and supporting each customer from the first conversation to the name appearing on the 7/12.",
+
+    /* Our Values */
+    values: [
+      { icon: "🤝", title: "Honesty First", text: "Straight answers about the land, the price and the process. If something is not right for you, we will say so." },
+      { icon: "📜", title: "Paperwork Before Promises", text: "We let documents do the talking. Nothing is offered until the records have been checked." },
+      { icon: "🔍", title: "Open Communication", text: "Titles, records and terms are shared with you before you book, so you never decide in the dark." },
+      { icon: "🚶", title: "No-Pressure Buying", text: "You visit, you compare, you decide. We never use urgency tactics to close a deal." },
+      { icon: "📈", title: "Growth-Minded Locations", text: "We pick land near real infrastructure — airport, sea link, highways and rail — where long-term demand is being built." },
+      { icon: "🛡️", title: "Long-Term Support", text: "Our job doesn't end at the sale deed. We stay available for mutation and any questions afterwards." }
+    ],
+
+    /* Why Choose Us */
+    whyChooseUs: [
+      { icon: "✅", title: "Verified 7/12 Records", text: "Every plot's 7/12 extract is reviewed in detail — owner, survey number, area and any encumbrance." },
+      { icon: "🔗", title: "Clean Title Chain", text: "We cross-check the 8A record and follow the title trail so there are no surprises later." },
+      { icon: "📍", title: "Inside the Mumbai 3.0 Belt", text: "Plots placed in the Uran–Panvel–Pen region, close to NMIA, Atal Setu and JNPT." },
+      { icon: "🗺️", title: "Site Visits, Not Just Photos", text: "Walk the land, check the access road and boundary, and see the surroundings before you commit." },
+      { icon: "📝", title: "Clear Written Agreement", text: "Plot details, agreed price and registration timeline are put in writing at the time of booking." },
+      { icon: "🏛️", title: "Registration Support", text: "We coordinate the sale deed, stamp duty guidance and sub-registrar formalities so you don't chase papers." },
+      { icon: "📄", title: "Mutation Handled for You", text: "We help file the 7/12 mutation at the Talathi office so your name reaches the land record." },
+      { icon: "💬", title: "Free Consultation", text: "Talk to our team about budget, location and goals with zero obligation." }
+    ],
+
+    /* Home page stats */
+    stats: [
+      { value: "124+",  label: "Villages in the Mumbai 3.0 Belt" },
+      { value: "6",     label: "Major Infra Projects Nearby" },
+      { value: "100%",  label: "Verified 7/12 Titles" },
+      { value: "Free",  label: "Site Visit & Consultation" }
+    ],
+
+    /* Contact details */
+    contact: {
+      phone: "+91 90000 00000", // VERIFY-CLIENT dummy
+      phoneAlt: "+91 90000 00001", // VERIFY-CLIENT dummy
+      whatsapp: "919000000000", // VERIFY-CLIENT dummy (country code + number)
+      email: "info@vighnahartarealty.com", // VERIFY-CLIENT
+      emailAlt: "sales@vighnahartarealty.com", // VERIFY-CLIENT
+      address: "Panvel, Navi Mumbai, Maharashtra", // VERIFY-CLIENT full office address
+      officeHours: "Monday – Saturday : 10:00 AM – 7:00 PM", // VERIFY-CLIENT
+      mapEmbed: "https://www.google.com/maps?q=Panvel%2C%20Maharashtra&output=embed"
+    },
+
+    social: [
+      { label: "FB", name: "Facebook",  url: "https://facebook.com" },
+      { label: "IG", name: "Instagram", url: "https://instagram.com" },
+      { label: "YT", name: "YouTube",   url: "https://youtube.com" },
+      { label: "IN", name: "LinkedIn",  url: "https://linkedin.com" }
+    ]
+  },
+
+  /* =====================================================================
+     2. PROJECTS  (add / remove / edit freely)
+     Prices below follow the 7/12 site listings — client to verify.
+     ===================================================================== */
+  projects: [
+
+    /* ---------------------------- PROJECT 1 ---------------------------- */
+    {
+      id: "mumbai-3-entry-plots",
+      name: "Mumbai 3.0 Entry Plots",
+      tagline: "An early, affordable way into Mumbai's next growth belt",
+      type: "Investment Plots",
+      status: "Available",
+      featured: true,
+      city: "Panvel",
+      location: "Uran – Panvel – Pen Belt, Mumbai 3.0",
+      priceFrom: "₹ 3 Lakh*",
+      priceNote: "Per Guntha (1,089 sq.ft), starting price",
+      plotSizes: ["1 Guntha – 1,089 sq.ft", "Multiple Gunthas on request"],
+      area: "Contact for details",
+      totalPlots: "Limited plots",
+      rera: "—", // VERIFY-CLIENT (add RERA no. only if applicable)
+      possession: "Registration Open",
+      image:
+        "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1600&q=80",
+      images: [
+        "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1400&q=80"
+      ],
+      overview:
+        "These plots sit inside the Mumbai 3.0 belt, the planned region between Mumbai and Navi Mumbai that is being shaped by the Navi Mumbai International Airport, Atal Setu and the Alibaug–Virar corridor. Priced well below saturated city markets, they give first-time investors a realistic way to enter early and hold for long-term appreciation. Each plot comes with a checked 7/12 extract and a clean title trail, and our team walks you through the paperwork from booking to mutation.",
+      highlights: [
+        "Located within the government-planned Mumbai 3.0 region",
+        "Close to Navi Mumbai International Airport (NMIA)",
+        "Quick access to Atal Setu and South Mumbai",
+        "7/12 extract verified, title chain checked",
+        "Simple starting price per Guntha",
+        "Written agreement at booking with price and timeline",
+        "Site visit arranged before you decide",
+        "Registration and mutation support from our team"
+      ],
+      plotDetails: [
+        { label: "Project Type",   value: "Investment Plots" },
+        { label: "Region",         value: "Mumbai 3.0 (Uran – Panvel – Pen)" },
+        { label: "Unit",           value: "1 Guntha = 1,089 sq.ft" },
+        { label: "Starting Price", value: "₹ 3 Lakh per Guntha" },
+        { label: "Title",          value: "7/12 Verified, Clear Title" },
+        { label: "Booking",        value: "Token amount + written agreement" },
+        { label: "Registration",   value: "Sale Deed with our assistance" },
+        { label: "Mutation",       value: "7/12 mutation support" },
+        { label: "Site Visit",     value: "Arranged on request" },
+        { label: "Availability",   value: "Registration Open" }
+      ],
+      connectivity: [
+        { place: "NH-4B Highway",                     distance: "~4 min drive" },
+        { place: "Panvel Railway Station",            distance: "~6 min drive" },
+        { place: "JNPT Port",                         distance: "~18 min drive" },
+        { place: "Navi Mumbai Int'l Airport (NMIA)",  distance: "~22 min drive" },
+        { place: "Atal Setu (MTHL)",                  distance: "~15 min to S. Mumbai" },
+        { place: "Alibaug–Virar Corridor",            distance: "126 km, under construction" },
+        { place: "Panvel–Khopoli Expressway",         distance: "Nearby" }
+      ],
+      mapEmbed:
+        "https://www.google.com/maps?q=Panvel%2C%20Maharashtra&output=embed"
+    },
+
+    /* ---------------------------- PROJECT 2 ---------------------------- */
+    {
+      id: "mumbai-3-premium-plots",
+      name: "Mumbai 3.0 Premium Corridor Plots",
+      tagline: "Plots closer to the action for buyers who want stronger positioning",
+      type: "Investment Plots",
+      status: "Available",
+      featured: true,
+      city: "Alibaug",
+      location: "Mumbai 3.0 Belt — Alibaug–Virar Corridor side",
+      priceFrom: "₹ 6 Lakh*",
+      priceNote: "Per Guntha (1,089 sq.ft), starting price",
+      plotSizes: ["1 Guntha – 1,089 sq.ft", "Multiple Gunthas on request"],
+      area: "Contact for details",
+      totalPlots: "Limited plots",
+      rera: "—", // VERIFY-CLIENT (add RERA no. only if applicable)
+      possession: "Registration Open",
+      image:
+        "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1600&q=80",
+      images: [
+        "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1400&q=80"
+      ],
+      overview:
+        "For buyers who prefer land nearer to the big infrastructure lines, this category offers plots positioned along the growth corridors of Mumbai 3.0. The Alibaug–Virar multimodal corridor, the coastal link to Atal Setu and the upcoming metro connection make this stretch a natural pick for medium to long-term investors. As with every Vighnaharta plot, records are checked before we show it, and the deal is documented in writing.",
+      highlights: [
+        "Positioned near major corridors of the Mumbai 3.0 region",
+        "Benefits from the 126 km Alibaug–Virar multimodal corridor",
+        "Strong access to Atal Setu, NMIA and JNPT",
+        "Ideal for medium to long-term holding",
+        "Clean 7/12 and verified title chain",
+        "Transparent booking with agreed price locked in writing",
+        "Guided site visit before selection",
+        "Support through sale deed and mutation"
+      ],
+      plotDetails: [
+        { label: "Project Type",   value: "Investment Plots" },
+        { label: "Region",         value: "Mumbai 3.0 Belt" },
+        { label: "Unit",           value: "1 Guntha = 1,089 sq.ft" },
+        { label: "Starting Price", value: "₹ 6 Lakh per Guntha" },
+        { label: "Title",          value: "7/12 Verified, Clear Title" },
+        { label: "Booking",        value: "Token amount + written agreement" },
+        { label: "Registration",   value: "Sale Deed with our assistance" },
+        { label: "Mutation",       value: "7/12 mutation support" },
+        { label: "Site Visit",     value: "Arranged on request" },
+        { label: "Availability",   value: "Registration Open" }
+      ],
+      connectivity: [
+        { place: "Alibaug–Virar Corridor",            distance: "126 km, under construction" },
+        { place: "Atal Setu (MTHL)",                  distance: "~15 min to S. Mumbai" },
+        { place: "Navi Mumbai Int'l Airport (NMIA)",  distance: "~22 min drive" },
+        { place: "JNPT Port",                         distance: "~18 min drive" },
+        { place: "Panvel Railway Station",            distance: "~6 min drive" },
+        { place: "Belapur–Uran Local Rail",           distance: "Operational" },
+        { place: "Proposed Metro Link (MTHL)",        distance: "MMRDA planned" }
+      ],
+      mapEmbed:
+        "https://www.google.com/maps?q=Alibaug%2C%20Maharashtra&output=embed"
+    },
+
+    /* ---------------------------- PROJECT 3 ---------------------------- */
+    {
+      id: "khopoli-pali-residential-plots",
+      name: "Khopoli–Pali Residential Plots",
+      tagline: "Budget-friendly residential plots on the Panvel–Khopoli side",
+      type: "Residential Plots",
+      status: "Available",
+      featured: false,
+      city: "Khopoli",
+      location: "Khopoli – Pali, Raigad",
+      priceFrom: "₹ 1.5 Lakh*",
+      priceNote: "Per Guntha (1,089 sq.ft), starting price",
+      plotSizes: ["1 Guntha – 1,089 sq.ft", "Multiple Gunthas on request"],
+      area: "Contact for details",
+      totalPlots: "Limited plots",
+      rera: "—", // VERIFY-CLIENT (add RERA no. only if applicable)
+      possession: "Registration Open",
+      image:
+        "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1600&q=80",
+      images: [
+        "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1400&q=80"
+      ],
+      overview:
+        "A practical option for buyers who want land at a lower entry ticket while staying connected to the MMR growth story. The Khopoli–Pali stretch offers green surroundings, good road links via the Panvel–Khopoli route and room for a future home, weekend plan or a patient long-term holding. Records are verified and the buying process stays as straightforward as on every other Vighnaharta plot.",
+      highlights: [
+        "Low entry price — a comfortable first land purchase",
+        "Green, peaceful surroundings with room to build",
+        "Connected via the Panvel–Khopoli route",
+        "Suitable for a home, weekend retreat or long-term hold",
+        "7/12 checked and title trail verified",
+        "Clear written agreement at booking",
+        "Site visit arranged before you choose",
+        "Full documentation guidance till mutation"
+      ],
+      plotDetails: [
+        { label: "Project Type",   value: "Residential Plots" },
+        { label: "Location",       value: "Khopoli – Pali" },
+        { label: "Unit",           value: "1 Guntha = 1,089 sq.ft" },
+        { label: "Starting Price", value: "₹ 1.5 Lakh per Guntha" },
+        { label: "Title",          value: "7/12 Verified, Clear Title" },
+        { label: "Booking",        value: "Token amount + written agreement" },
+        { label: "Registration",   value: "Sale Deed with our assistance" },
+        { label: "Mutation",       value: "7/12 mutation support" },
+        { label: "Site Visit",     value: "Arranged on request" },
+        { label: "Availability",   value: "Registration Open" }
+      ],
+      connectivity: [
+        { place: "Panvel–Khopoli Expressway",         distance: "Nearby" },
+        { place: "Khopoli Railway Station",           distance: "Nearby" },
+        { place: "Panvel",                            distance: "Approach via expressway" },
+        { place: "Navi Mumbai Int'l Airport (NMIA)",  distance: "Accessible via Panvel" },
+        { place: "Mumbai–Pune Expressway",            distance: "Nearby" },
+        { place: "Local Market & Schools",            distance: "Nearby" }
+      ],
+      mapEmbed:
+        "https://www.google.com/maps?q=Khopoli%2C%20Maharashtra&output=embed"
+    }
+  ],
+
+  /* =====================================================================
+     3. NAVIGATION (Main Menu)
+     ===================================================================== */
+  navigation: [
+    { label: "Home",       route: "#/" },
+    { label: "About Us",   route: "#/about" },
+    { label: "Projects",   route: "#/projects" },
+    { label: "Contact Us", route: "#/contact" }
+  ]
 };
-
-export const PROPERTIES = [
-  {
-    id: 1,
-    name: "Vidhnharta Green County",
-    location: "Bhavnagar",
-    type: "Residential Plots",
-    description: "A calm residential plotting project designed for families who want open surroundings and an address with room to grow.",
-    sizes: "1000, 1200 and 1500 sq. ft.",
-    highlights: "Clear title, internal asphalt roads, underground electrification and landscaped entrance gate.",
-    connectivity: "Easy access to Bhavnagar city center, reputed schools and daily essentials within 10 mins.",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=70"
-  },
-  {
-    id: 2,
-    name: "Vidhnharta Sunrise Enclave",
-    location: "Bhavnagar",
-    type: "Residential Plots",
-    description: "A thoughtfully planned neighbourhood with generous plot options, wide roads and a peaceful setting for your next chapter.",
-    sizes: "800, 1000 and 1250 sq. ft.",
-    highlights: "Gated entry with 24/7 security, proper drainage, solar street lighting and reliable water pipeline.",
-    connectivity: "Direct connectivity to Bhavnagar-Rajkot highway, local shopping complexes and medical facilities.",
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1000&q=70"
-  },
-  {
-    id: 3,
-    name: "Vidhnharta Farmview",
-    location: "Rajkot Road",
-    type: "Farm Plots",
-    description: "Open land for a weekend retreat, organic garden home or long-term high-yield investment, surrounded by scenic green hills.",
-    sizes: "2000, 3000 and 5000 sq. ft.",
-    highlights: "Clear demarcation, individual boundary fencing, fertile soil and approach road access.",
-    connectivity: "A short 15-minute drive from the main bypass and upcoming commercial hub.",
-    image: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1000&q=70"
-  },
-  {
-    id: 11,
-    name: "Green Belt Luxury Plot",
-    location: "Bhavnagar",
-    type: "Residential Plots",
-    description: "A premium residential plot in a rapidly developing sector, with paved road access, drainage, and utility lines ready for immediate construction.",
-    sizes: "1200 and 1800 sq. ft.",
-    highlights: "100% Clear Title, NA / NOC approved, ready for immediate registry and bank loan eligible.",
-    connectivity: "Close to airport road, gardens, and premium residential townships.",
-    image: "https://images.unsplash.com/photo-16005851554526-990dced4db0d?auto=format&fit=crop&w=1000&q=70"
-  },
-  {
-    id: 12,
-    name: "Family Flat near Market",
-    location: "Sihor",
-    type: "Rental",
-    description: "A bright three-bedroom flat for rent close to the town market and bus station. Ground floor, easy accessibility and peaceful shared courtyard.",
-    sizes: "3 BHK (1450 sq. ft.)",
-    highlights: "Semi-furnished, dedicated parking slot, 24-hr water supply and elevator access.",
-    connectivity: "2 minutes walk to local vegetable market, bus depot and top schools.",
-    image: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1000&q=70"
-  }
-];
-
-export const TIMELINE = [
-  {
-    year: "01",
-    title: "Locations with high growth potential",
-    text: "We study road connectivity, infrastructure development, town planning, and everyday convenience before presenting any plot or project."
-  },
-  {
-    year: "02",
-    title: "Details & legal paperwork you can trust",
-    text: "Every property comes with 100% verified documents, NA permissions, clear titles, and transparent pricing without hidden surprises."
-  },
-  {
-    year: "03",
-    title: "Personal, unhurried guidance",
-    text: "Every enquiry gets a thoughtful consultation, whether you are buying your very first residential plot or expanding an agricultural portfolio."
-  },
-  {
-    year: "04",
-    title: "End-to-end support beyond sale",
-    text: "Our team stays with you through physical site visits, registry assistance, demarcation, and post-possession development."
-  }
-];
-
-export const STATS = [
-  { count: 12, suffix: "+", label: "Curated Projects" },
-  { count: 500, suffix: "+", label: "Happy Families" },
-  { count: 100, suffix: "%", label: "Clear Title Land" },
-  { count: 10, suffix: "+ Yrs", label: "Regional Trust" }
-];
-
-export const FAQS = [
-  {
-    question: "Are all the plots provided with clear legal title and documentation?",
-    answer: "Yes, 100% of our properties undergo rigorous legal verification by legal advocates. We ensure clean title deeds, non-agricultural (NA) certification, and instant registry readiness."
-  },
-  {
-    question: "Can I schedule a physical site visit before making a decision?",
-    answer: "Absolutely! We provide guided physical site visits on any day of the week with our property specialists who will show you the exact demarcation, approach roads, and surrounding infrastructure."
-  },
-  {
-    question: "Are bank loans available on your plotting projects?",
-    answer: "Yes, most of our verified residential projects are approved by leading nationalized and private banks for easy plot purchase and construction loans."
-  },
-  {
-    question: "What is the typical booking and registration timeline?",
-    answer: "Once you choose a plot, the documentation and initial agreement can be completed within 24 to 48 hours. The final registry is scheduled at your convenience."
-  },
-  {
-    question: "How do I enquire or get complete project brochures?",
-    answer: "You can click on the WhatsApp button next to any property or use our Contact page form. Our team will promptly share detailed layout plans, photos, and brochures directly on WhatsApp."
-  }
-];
