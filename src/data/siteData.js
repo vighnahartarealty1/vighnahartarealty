@@ -281,6 +281,13 @@ const SITE_DATA = {
     }
   ],
 
+  /* Project Categories for filter pills */
+  categories: [
+    "All",
+    "Investment Plots",
+    "Residential Plots"
+  ],
+
   /* =====================================================================
      3. NAVIGATION (Main Menu)
      ===================================================================== */
@@ -291,3 +298,50 @@ const SITE_DATA = {
     { label: "Contact Us", route: "#/contact" }
   ]
 };
+
+const { company } = SITE_DATA;
+
+export const CATEGORIES = SITE_DATA.categories && SITE_DATA.categories.length > 0
+  ? SITE_DATA.categories
+  : ['All', ...Array.from(new Set(SITE_DATA.projects.map((p) => p.type).filter(Boolean)))];
+
+export const SITE = {
+  name: company.name,
+  tagline: company.tagline,
+  whatsappNumber: company.contact.whatsapp,
+  phoneDisplay: company.contact.phone,
+  phoneAlt: company.contact.phoneAlt,
+  email: company.contact.email,
+  emailAlt: company.contact.emailAlt,
+  address: company.contact.address,
+  officeHours: company.contact.officeHours,
+  mapEmbed: company.contact.mapEmbed
+};
+
+export const PROPERTIES = SITE_DATA.projects.map((project) => ({
+  ...project,
+  description: project.overview,
+  sizes: project.plotSizes.join(' | ')
+}));
+
+export const STATS = company.stats.map((stat) => {
+  const numericValue = stat.value.match(/^(\d+)(.*)$/);
+
+  return {
+    ...stat,
+    count: numericValue ? Number(numericValue[1]) : 0,
+    suffix: numericValue ? numericValue[2] : '',
+    displayValue: numericValue ? null : stat.value
+  };
+});
+
+export const TIMELINE = company.whyChooseUs.map((item, index) => ({
+  year: String(index + 1).padStart(2, '0'),
+  title: item.title,
+  text: item.text
+}));
+
+export const FAQS = company.whyChooseUs.map((item) => ({
+  question: item.title,
+  answer: item.text
+}));

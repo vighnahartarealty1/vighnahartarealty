@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { STATS } from '../data/siteData';
 import ScrollReveal from './ScrollReveal';
 
-function AnimatedCounter({ target, suffix, duration = 1800 }) {
+function AnimatedCounter({ target, suffix, displayValue, duration = 1800 }) {
   const [count, setCount] = useState(0);
   const [started, setStarted] = useState(false);
   const elementRef = useRef(null);
@@ -44,8 +44,8 @@ function AnimatedCounter({ target, suffix, duration = 1800 }) {
   return (
     <div className="hero-stat-card" ref={elementRef}>
       <div className="stat-number-wrap">
-        <span className="stat-num">{count}</span>
-        <span className="stat-plus">{suffix}</span>
+        <span className="stat-num">{displayValue ?? count}</span>
+        {!displayValue && <span className="stat-plus">{suffix}</span>}
       </div>
       <span className="stat-label"></span>
     </div>
@@ -62,7 +62,7 @@ export default function StatsIntro() {
             {STATS.map((stat, idx) => (
               <React.Fragment key={stat.label}>
                 <div className="hero-stat-card">
-                  <AnimatedCounter target={stat.count} suffix={stat.suffix} />
+                  <AnimatedCounter target={stat.count} suffix={stat.suffix} displayValue={stat.displayValue} />
                   <span className="stat-label">{stat.label}</span>
                 </div>
                 {idx < STATS.length - 1 && <div className="hero-stat-divider"></div>}

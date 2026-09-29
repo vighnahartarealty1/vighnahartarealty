@@ -22,14 +22,31 @@ export default function PropertyModal({ property, onClose }) {
 
   if (!property) return null;
 
+  const formatFact = (val) => {
+    if (!val) return '';
+    if (typeof val === 'string') return val;
+    if (Array.isArray(val)) {
+      return val
+        .map((item) => {
+          if (item && typeof item === 'object') {
+            return `${item.place || item.label || ''} (${item.distance || item.value || ''})`;
+          }
+          return String(item);
+        })
+        .join(', ');
+    }
+    return String(val);
+  };
+
   const facts = [
+    ['Price', property.priceFrom ? `${property.priceFrom}${property.priceNote ? ` · ${property.priceNote}` : ''}` : null],
     ['Available sizes', property.sizes],
-    ['Project highlights', property.highlights],
+    ['Project highlights', Array.isArray(property.highlights) ? property.highlights.join(' • ') : property.highlights],
     ['Location & connectivity', property.connectivity]
   ].filter((f) => f[1]);
 
   const waUrl = `https://wa.me/${SITE.whatsappNumber}?text=${encodeURIComponent(
-    `Hello Vidhnharta Reality, I am interested in "${property.name}" in ${property.location}. Please share more details.`
+    `Hello ${SITE.name}, I am interested in "${property.name}" in ${property.location}. Please share more details.`
   )}`;
 
   return (
@@ -62,7 +79,7 @@ export default function PropertyModal({ property, onClose }) {
             {facts.map(([label, val]) => (
               <div key={label}>
                 <strong>{label}</strong>
-                <span>{val}</span>
+                <span>{formatFact(val)}</span>
               </div>
             ))}
           </div>

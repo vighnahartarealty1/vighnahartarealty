@@ -38,7 +38,7 @@ export default function PropertyCard({ property, index, onOpenModal }) {
   };
 
   const waUrl = `https://wa.me/${SITE.whatsappNumber}?text=${encodeURIComponent(
-    `Hello Vidhnharta Reality, I am interested in "${property.name}" in ${property.location}. Please share more details.`
+    `Hello ${SITE.name}, I am interested in "${property.name}" in ${property.location}. Please share more details.`
   )}`;
 
   const delay = (index % 3) * 0.08;
@@ -61,21 +61,35 @@ export default function PropertyCard({ property, index, onOpenModal }) {
         />
       </div>
       <div className="card-body">
-        <p className="card-type">{property.type}</p>
+        <div className="card-top-meta">
+          <p className="card-type">{property.type}</p>
+          {property.priceFrom && (
+            <span className="card-price-badge">From {property.priceFrom}</span>
+          )}
+        </div>
         <h3>{property.name}</h3>
         <p className="card-loc">
-          {property.location} {property.sizes ? ` · ${property.sizes}` : ''}
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true" style={{ verticalAlign: '-1px', marginRight: 5, opacity: 0.75, display: 'inline-block' }}>
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+            <circle cx="12" cy="9" r="2.5"/>
+          </svg>
+          {property.location}
         </p>
+        {property.sizes && (
+          <p className="card-sizes">
+            <span className="card-sizes-label">Sizes:</span> {property.sizes}
+          </p>
+        )}
         <div className="card-actions">
           <button 
             type="button" 
-            className="btn btn-brown btn-full btn-glow view-details"
+            className="btn btn-brown btn-glow view-details"
             onClick={() => onOpenModal(property)}
           >
             View details
           </button>
           <a 
-            className="btn btn-wa-line btn-full" 
+            className="btn btn-wa-line" 
             href={waUrl} 
             target="_blank" 
             rel="noopener noreferrer"
