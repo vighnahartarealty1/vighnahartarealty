@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { SITE } from '../data/siteData';
 
 export default function Hero({ searchQuery, setSearchQuery, onSearchSubmit }) {
   const [parallaxOffset, setParallaxOffset] = useState(0);
@@ -31,15 +32,14 @@ export default function Hero({ searchQuery, setSearchQuery, onSearchSubmit }) {
       <div className="hero-bg-wrapper">
         <img 
           className={`hero-img ${imageLoaded ? 'is-loaded' : ''}`}
-          src="/hero-bg.jpg"
+          src={SITE.heroImage || "/images/home-page-1.jpeg"}
           alt="Sunlit peaceful rolling hills landscape at golden sunrise"
           style={{ transform: `translate3d(0, ${parallaxOffset}px, 0)` }}
           onLoad={() => setImageLoaded(true)}
           onError={(e) => {
-            // High reliability fallback in case of path resolution
             if (!e.target.dataset.triedFallback) {
               e.target.dataset.triedFallback = 'true';
-              e.target.src = 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=2200&q=85';
+              e.target.src = '/images/home-page-1.jpeg';
             }
           }}
         />

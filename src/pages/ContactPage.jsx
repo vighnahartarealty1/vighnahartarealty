@@ -57,7 +57,7 @@ export default function ContactPage() {
         badge="Direct Advisory &amp; Enquiries"
         title="Let's Find Your Ideal Place"
         subtitle="Speak directly with our land and property specialists in Bhavnagar. We are here to guide your every step with clarity."
-        image="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=2200&q=85"
+        image={SITE.contactImage || "/images/contact-us.jpeg"}
       />
 
       {/* ─── Section A: Centered Introduction ─── */}

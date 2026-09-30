@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import PageBanner from '../components/PageBanner';
 import VisionSteps from '../components/VisionSteps';
 import ScrollReveal from '../components/ScrollReveal';
+import { SITE } from '../data/siteData';
 
 export default function AboutPage() {
   const pillars = [
@@ -33,7 +34,7 @@ export default function AboutPage() {
       <PageBanner 
         title="Decisions with Clarity. Places with Promise."
         subtitle="We help families, creators, and investors discover verified plots and peaceful sanctuaries with complete trust."
-        image="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=2200&q=85"
+        image={SITE.aboutImage || "/images/about-us.jpeg"}
       />
 
       {/* Story & Philosophy */}
@@ -70,7 +71,7 @@ export default function AboutPage() {
             <ScrollReveal animation="fade-up" delay={120}>
               <div className="story-image-wrap">
                 <img 
-                  src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" 
+                  src={SITE.aboutImage2 || "/images/about-us-2.jpeg"} 
                   alt="Peaceful lush residential landscape"
                   className="story-main-img" 
                 />

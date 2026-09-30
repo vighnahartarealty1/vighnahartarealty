@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import PageBanner from '../components/PageBanner';
 import TimelineSection from '../components/TimelineSection';
 import ScrollReveal from '../components/ScrollReveal';
+import { SITE } from '../data/siteData';
 
 export default function WhyUsPage() {
   const guarantees = [
@@ -44,7 +45,7 @@ export default function WhyUsPage() {
         badge="Trust &amp; Verification"
         title="Why Choose Vighnharta Realty"
         subtitle="The small details matter when you are choosing land for a very big future. Discover our proven standard of trust."
-        image="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=2200&q=85"
+        image={SITE.whyChooseUsImage || "/images/why-choose-us.jpeg"}
         // breadcrumbs={[{ label: 'Why Us' }]}
       />
 

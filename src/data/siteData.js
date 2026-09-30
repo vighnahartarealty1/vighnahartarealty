@@ -20,11 +20,12 @@ const SITE_DATA = {
     intro:
       "Vighnharta Realty helps families and investors buy verified plots in the Mumbai 3.0 belt — Uran, Panvel and Pen — with clean 7/12 records and guidance right up to registration.",
 
-    heroImage:
-      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1800&q=80",
-
-    aboutImage:
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+    heroImage: "/images/home-page-1.jpeg",
+    aboutImage: "/images/about-us.jpeg",
+    aboutImage2: "/images/about-us-2.jpeg",
+    whyChooseUsImage: "/images/why-choose-us.jpeg",
+    contactImage: "/images/contact-us.jpeg",
+    projectsImage: "/images/projects.jpeg",
 
     /* About page paragraphs */
     about: [
@@ -112,13 +113,11 @@ const SITE_DATA = {
       totalPlots: "Limited plots",
       rera: "—", // VERIFY-CLIENT (add RERA no. only if applicable)
       possession: "Registration Open",
-      image:
-        "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1600&q=80",
+      image: "/images/3-lakh-plot.jpeg",
       images: [
-        "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1400&q=80",
-        "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1400&q=80",
-        "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1400&q=80",
-        "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1400&q=80"
+        "/images/3-lakh-plot.jpeg",
+        "/images/home-page-1.jpeg",
+        "/images/projects.jpeg"
       ],
       overview:
         "These plots sit inside the Mumbai 3.0 belt, the planned region between Mumbai and Navi Mumbai that is being shaped by the Navi Mumbai International Airport, Atal Setu and the Alibaug–Virar corridor. Priced well below saturated city markets, they give first-time investors a realistic way to enter early and hold for long-term appreciation. Each plot comes with a checked 7/12 extract and a clean title trail, and our team walks you through the paperwork from booking to mutation.",
@@ -174,13 +173,11 @@ const SITE_DATA = {
       totalPlots: "Limited plots",
       rera: "—", // VERIFY-CLIENT (add RERA no. only if applicable)
       possession: "Registration Open",
-      image:
-        "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1600&q=80",
+      image: "/images/6lakh-new.png",
       images: [
-        "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1400&q=80",
-        "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1400&q=80",
-        "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1400&q=80",
-        "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1400&q=80"
+        "/images/6lakh-new.png",
+        "/images/home-page-1.jpeg",
+        "/images/projects.jpeg"
       ],
       overview:
         "For buyers who prefer land nearer to the big infrastructure lines, this category offers plots positioned along the growth corridors of Mumbai 3.0. The Alibaug–Virar multimodal corridor, the coastal link to Atal Setu and the upcoming metro connection make this stretch a natural pick for medium to long-term investors. As with every Vighnharta plot, records are checked before we show it, and the deal is documented in writing.",
@@ -236,13 +233,11 @@ const SITE_DATA = {
       totalPlots: "Limited plots",
       rera: "—", // VERIFY-CLIENT (add RERA no. only if applicable)
       possession: "Registration Open",
-      image:
-        "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1600&q=80",
+      image: "/images/1.5lakh.jpeg",
       images: [
-        "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1400&q=80",
-        "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1400&q=80",
-        "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1400&q=80",
-        "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1400&q=80"
+        "/images/1.5lakh.jpeg",
+        "/images/home-page-1.jpeg",
+        "/images/projects.jpeg"
       ],
       overview:
         "A practical option for buyers who want land at a lower entry ticket while staying connected to the MMR growth story. The Khopoli–Pali stretch offers green surroundings, good road links via the Panvel–Khopoli route and room for a future home, weekend plan or a patient long-term holding. Records are verified and the buying process stays as straightforward as on every other Vighnharta plot.",
@@ -315,7 +310,13 @@ export const SITE = {
   emailAlt: company.contact.emailAlt,
   address: company.contact.address,
   officeHours: company.contact.officeHours,
-  mapEmbed: company.contact.mapEmbed
+  mapEmbed: company.contact.mapEmbed,
+  heroImage: company.heroImage,
+  aboutImage: company.aboutImage,
+  aboutImage2: company.aboutImage2,
+  whyChooseUsImage: company.whyChooseUsImage,
+  contactImage: company.contactImage,
+  projectsImage: company.projectsImage
 };
 
 export const PROPERTIES = SITE_DATA.projects.map((project) => ({

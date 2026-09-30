@@ -62,7 +62,7 @@ export default function ProjectsPage({ onOpenModal }) {
       <PageBanner 
         title="Our Curated Projects"
         subtitle="Explore verified residential plots and strategic investment land across Panvel, Alibaug, Khopoli, and the Mumbai 3.0 corridor."
-        image="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=2200&q=85"
+        image={SITE.projectsImage || "/images/projects.jpeg"}
         // breadcrumbs={[{ label: 'Projects & Locations' }]}
       />
 
