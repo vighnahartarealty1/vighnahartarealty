@@ -43,7 +43,7 @@ export default function WhyUsPage() {
     <div className="page-why-us">
       <PageBanner 
         badge="Trust &amp; Verification"
-        title="Why Choose Vighnharta Realty"
+        title="Why Choose Vighnaharta Realty"
         subtitle="The small details matter when you are choosing land for a very big future. Discover our proven standard of trust."
         image={SITE.whyChooseUsImage || "/images/why-choose-us.jpeg"}
         // breadcrumbs={[{ label: 'Why Us' }]}
@@ -55,7 +55,7 @@ export default function WhyUsPage() {
           <ScrollReveal animation="fade-up">
             <div className="section-head text-center-wrap">
               <p className="intro-label">Legal Confidence &amp; Certainty</p>
-              <h2>The Vighnharta Assurance</h2>
+              <h2>The Vighnaharta Assurance</h2>
               <p>Six uncompromising principles that protect your investment and ensure total peace of mind.</p>
             </div>
           </ScrollReveal>
@@ -90,7 +90,7 @@ export default function WhyUsPage() {
               <div className="comparison-action">
                 <Link to="/contact" className="btn btn-brown btn-glow">Book a Site Visit</Link>
                 <a 
-                  href="https://wa.me/919999999999?text=Hello%20Vighnharta%20Realty%2C%20I%20would%20like%20to%20book%20a%20site%20visit."
+                  href="https://wa.me/919999999999?text=Hello%20Vighnaharta%20Realty%2C%20I%20would%20like%20to%20book%20a%20site%20visit."
                   className="btn btn-wa-fill"
                   target="_blank"
                   rel="noopener noreferrer"

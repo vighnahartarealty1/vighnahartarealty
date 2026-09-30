@@ -3,7 +3,7 @@ import { SITE } from '../data/siteData';
 
 export default function FloatingWhatsApp() {
   const waUrl = `https://wa.me/${SITE.whatsappNumber}?text=${encodeURIComponent(
-    'Hello Vighnharta Realty, I would like to enquire about your land and property opportunities.'
+    'Hello Vighnaharta Realty, I would like to enquire about your land and property opportunities.'
   )}`;
 
   return (
@@ -11,7 +11,7 @@ export default function FloatingWhatsApp() {
       href={waUrl} 
       className="floating-wa" 
       id="floatingWa" 
-      aria-label="Chat with Vighnharta Realty on WhatsApp" 
+      aria-label="Chat with Vighnaharta Realty on WhatsApp" 
       target="_blank" 
       rel="noopener noreferrer"
     >

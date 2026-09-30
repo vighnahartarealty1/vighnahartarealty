@@ -1,5 +1,5 @@
 /* =========================================================================
-   VIGHNHARTA REALTY — MASTER DATA FILE
+   VIGHNAHARTA REALTY — MASTER DATA FILE
    -------------------------------------------------------------------------
    ➜  EDIT EVERYTHING HERE. No other file needs to be touched for content.
 
@@ -13,12 +13,12 @@ const SITE_DATA = {
      1. COMPANY INFORMATION
      ===================================================================== */
   company: {
-    name: "Vighnharta Realty",
-    shortName: "Vighnharta",
+    name: "Vighnaharta Realty",
+    shortName: "Vighnaharta",
     tagline: "Clear Titles. Confident Investments.",
     established: "2023", // VERIFY-CLIENT
     intro:
-      "Vighnharta Realty helps families and investors buy verified plots in the Mumbai 3.0 belt — Uran, Panvel and Pen — with clean 7/12 records and guidance right up to registration.",
+      "Vighnaharta Realty helps families and investors buy verified plots in the Mumbai 3.0 belt — Uran, Panvel and Pen — with clean 7/12 records and guidance right up to registration.",
 
     heroImage: "/images/home-page-1.jpeg",
     aboutImage: "/images/about-us.jpeg",
@@ -29,7 +29,7 @@ const SITE_DATA = {
 
     /* About page paragraphs */
     about: [
-      "Vighnharta Realty was created around one idea: buying land in Maharashtra should feel clear, not risky. Most people who want to invest in a plot are ready with the money — what holds them back is the worry about what the paperwork really says. We exist to remove that worry.",
+      "Vighnaharta Realty was created around one idea: buying land in Maharashtra should feel clear, not risky. Most people who want to invest in a plot are ready with the money — what holds them back is the worry about what the paperwork really says. We exist to remove that worry.",
       "We focus on plots in the Mumbai 3.0 belt, the planned urban region taking shape between Mumbai and Navi Mumbai across Uran, Panvel and Pen. Before any plot is shown to a customer, our team checks the 7/12 extract, cross-verifies the 8A record and traces the title so that ownership is clean from the very start.",
       "Our way of working is simple. We listen first, take you to the land in person, let you choose at your own pace, and then stay with you through booking, sale deed and mutation. No pressure, no confusing jargon — just a straight process where every decision is backed by documents."
     ],
@@ -75,8 +75,8 @@ const SITE_DATA = {
       phone: "+91 90000 00000", // VERIFY-CLIENT dummy
       phoneAlt: "+91 90000 00001", // VERIFY-CLIENT dummy
       whatsapp: "919000000000", // VERIFY-CLIENT dummy (country code + number)
-      email: "info@vighnhartarealty.com", // VERIFY-CLIENT
-      emailAlt: "sales@vighnhartarealty.com", // VERIFY-CLIENT
+      email: "info@vighnahartarealty.com", // VERIFY-CLIENT
+      emailAlt: "sales@vighnahartarealty.com", // VERIFY-CLIENT
       address: "Panvel, Navi Mumbai, Maharashtra", // VERIFY-CLIENT full office address
       officeHours: "Monday – Saturday : 10:00 AM – 7:00 PM", // VERIFY-CLIENT
       mapEmbed: "https://www.google.com/maps?q=Panvel%2C%20Maharashtra&output=embed"
@@ -180,7 +180,7 @@ const SITE_DATA = {
         "/images/projects.jpeg"
       ],
       overview:
-        "For buyers who prefer land nearer to the big infrastructure lines, this category offers plots positioned along the growth corridors of Mumbai 3.0. The Alibaug–Virar multimodal corridor, the coastal link to Atal Setu and the upcoming metro connection make this stretch a natural pick for medium to long-term investors. As with every Vighnharta plot, records are checked before we show it, and the deal is documented in writing.",
+        "For buyers who prefer land nearer to the big infrastructure lines, this category offers plots positioned along the growth corridors of Mumbai 3.0. The Alibaug–Virar multimodal corridor, the coastal link to Atal Setu and the upcoming metro connection make this stretch a natural pick for medium to long-term investors. As with every Vighnaharta plot, records are checked before we show it, and the deal is documented in writing.",
       highlights: [
         "Positioned near major corridors of the Mumbai 3.0 region",
         "Benefits from the 126 km Alibaug–Virar multimodal corridor",
@@ -240,7 +240,7 @@ const SITE_DATA = {
         "/images/projects.jpeg"
       ],
       overview:
-        "A practical option for buyers who want land at a lower entry ticket while staying connected to the MMR growth story. The Khopoli–Pali stretch offers green surroundings, good road links via the Panvel–Khopoli route and room for a future home, weekend plan or a patient long-term holding. Records are verified and the buying process stays as straightforward as on every other Vighnharta plot.",
+        "A practical option for buyers who want land at a lower entry ticket while staying connected to the MMR growth story. The Khopoli–Pali stretch offers green surroundings, good road links via the Panvel–Khopoli route and room for a future home, weekend plan or a patient long-term holding. Records are verified and the buying process stays as straightforward as on every other Vighnaharta plot.",
       highlights: [
         "Low entry price — a comfortable first land purchase",
         "Green, peaceful surroundings with room to build",

@@ -41,7 +41,7 @@ export default function ContactSection() {
     if (!validate()) return;
 
     const lines = [
-      'Hello Vighnharta Realty,',
+      'Hello Vighnaharta Realty,',
       '',
       `Name: ${formData.name.trim()}`,
       `Email: ${formData.email.trim()}`,
@@ -77,7 +77,7 @@ export default function ContactSection() {
             </ul>
             <div className="map-wrap">
               <iframe 
-                title="Vighnharta Realty office location"
+                title="Vighnaharta Realty office location"
                 src="https://www.google.com/maps?q=Bhavnagar%2C%20Gujarat&output=embed" 
                 loading="lazy"
               />

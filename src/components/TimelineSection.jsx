@@ -40,7 +40,7 @@ export default function TimelineSection() {
     <section className="section timeline-section" id="why-us">
       <div className="wrap">
         <div className="section-head">
-          <h2>Why choose Vighnharta Realty</h2>
+          <h2>Why choose Vighnaharta Realty</h2>
           <p>The small details matter when you are choosing land for a very big future.</p>
         </div>
         <div className="timeline-container" ref={timelineRef}>

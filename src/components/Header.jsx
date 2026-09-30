@@ -54,12 +54,12 @@ export default function Header() {
         />
         <div className="header-container">
           {/* Brand Logo */}
-          <Link to="/" className="logo logo-pill-badge" aria-label="Vighnharta Realty home" onClick={() => setMenuOpen(false)}>
+          <Link to="/" className="logo logo-pill-badge" aria-label="Vighnaharta Realty home" onClick={() => setMenuOpen(false)}>
             <svg className="logo-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
               <path d="m8 3 4 8 5-5 5 15H2L8 3z" />
             </svg>
-            <span>Vighnharta <em>Realty</em></span>
+            <span>Vighnaharta <em>Realty</em></span>
           </Link>
 
           {/* Desktop Nav: Clean single row with active bottom underline bar (Image 1) */}
@@ -181,7 +181,7 @@ export default function Header() {
               </a>
 
               <a 
-                href={`https://wa.me/${SITE.whatsappNumber}?text=Hello%20Vighnharta%20Realty,%20I%20would%20like%20to%20enquire%20about%20your%20properties.`}
+                href={`https://wa.me/${SITE.whatsappNumber}?text=Hello%20Vighnaharta%20Realty,%20I%20would%20like%20to%20enquire%20about%20your%20properties.`}
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="drawer-pill-btn drawer-pill-wa"
