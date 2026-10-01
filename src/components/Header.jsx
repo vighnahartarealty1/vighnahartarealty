@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { NavLink, Link, useLocation } from 'react-router-dom';
 import { SITE } from '../data/siteData';
 
-export default function Header() {
+export default function Header({ isHidden = false }) {
   const [scrolled, setScrolled] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -43,6 +43,8 @@ export default function Header() {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+
+  if (isHidden) return null;
 
   return (
     <>

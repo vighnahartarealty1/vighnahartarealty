@@ -20,11 +20,11 @@ const SITE_DATA = {
     intro:
       "Vighnaharta Realty helps families and investors buy verified plots in the Mumbai 3.0 belt — Uran, Panvel and Pen — with clean 7/12 records and guidance right up to registration.",
 
-    heroImage: "/images/home-page-1.jpeg",
+    heroImage: "/images/home page 1.jpeg",
     aboutImage: "/images/about-us.jpeg",
-    aboutImage2: "/images/about-us-2.jpeg",
+    aboutImage2: "/images/about us 2.jpeg",
     whyChooseUsImage: "/images/why-choose-us.jpeg",
-    contactImage: "/images/contact-us.jpeg",
+    contactImage: "/images/contact us.jpeg",
     projectsImage: "/images/projects.jpeg",
 
     /* About page paragraphs */
@@ -113,10 +113,10 @@ const SITE_DATA = {
       totalPlots: "Limited plots",
       rera: "—", // VERIFY-CLIENT (add RERA no. only if applicable)
       possession: "Registration Open",
-      image: "/images/3-lakh-plot.jpeg",
+      image: "/images/3 lakh plot.jpeg",
       images: [
-        "/images/3-lakh-plot.jpeg",
-        "/images/home-page-1.jpeg",
+        "/images/3 lakh plot.jpeg",
+        "/images/home page 1.jpeg",
         "/images/projects.jpeg"
       ],
       overview:
@@ -173,10 +173,10 @@ const SITE_DATA = {
       totalPlots: "Limited plots",
       rera: "—", // VERIFY-CLIENT (add RERA no. only if applicable)
       possession: "Registration Open",
-      image: "/images/6lakh-new.png",
+      image: "/images/6lakh_new.png",
       images: [
-        "/images/6lakh-new.png",
-        "/images/home-page-1.jpeg",
+        "/images/6lakh_new.png",
+        "/images/home page 1.jpeg",
         "/images/projects.jpeg"
       ],
       overview:
@@ -236,7 +236,7 @@ const SITE_DATA = {
       image: "/images/1.5lakh.jpeg",
       images: [
         "/images/1.5lakh.jpeg",
-        "/images/home-page-1.jpeg",
+        "/images/home page 1.jpeg",
         "/images/projects.jpeg"
       ],
       overview:

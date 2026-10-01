@@ -24,8 +24,8 @@ export default function App() {
       <div className="app">
         <a className="skip" href="#main-content">Skip to content</a>
 
-        {/* Global Floating Header */}
-        <Header />
+        {/* Global Floating Header (hidden when property modal view detail is open) */}
+        <Header isHidden={Boolean(selectedProperty)} />
 
         {/* Multi-Page Routes */}
         <main id="main-content">

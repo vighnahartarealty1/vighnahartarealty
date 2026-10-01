@@ -9,13 +9,16 @@ export default function PropertyModal({ property, onClose }) {
 
     if (property) {
       document.body.classList.add('no-scroll');
+      document.body.classList.add('modal-open');
       window.addEventListener('keydown', handleKeyDown);
     } else {
       document.body.classList.remove('no-scroll');
+      document.body.classList.remove('modal-open');
     }
 
     return () => {
       document.body.classList.remove('no-scroll');
+      document.body.classList.remove('modal-open');
       window.removeEventListener('keydown', handleKeyDown);
     };
   }, [property, onClose]);
@@ -56,14 +59,18 @@ export default function PropertyModal({ property, onClose }) {
       aria-modal="true" 
       aria-labelledby="mTitle"
     >
-      <div className="modal-backdrop" onClick={onClose}></div>
+      <div className="modal-backdrop" onClick={onClose} tabIndex={-1} aria-hidden="true"></div>
       <div className="modal-box">
         <button 
+          type="button"
           className="modal-close" 
           aria-label="Close details" 
           onClick={onClose}
         >
-          &times;
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
         </button>
         <img 
           className="modal-img" 

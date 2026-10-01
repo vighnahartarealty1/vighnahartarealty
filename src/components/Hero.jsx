@@ -32,14 +32,14 @@ export default function Hero({ searchQuery, setSearchQuery, onSearchSubmit }) {
       <div className="hero-bg-wrapper">
         <img 
           className={`hero-img ${imageLoaded ? 'is-loaded' : ''}`}
-          src={SITE.heroImage || "/images/home-page-1.jpeg"}
+          src={SITE.heroImage || "/images/home page 1.jpeg"}
           alt="Sunlit peaceful rolling hills landscape at golden sunrise"
           style={{ transform: `translate3d(0, ${parallaxOffset}px, 0)` }}
           onLoad={() => setImageLoaded(true)}
           onError={(e) => {
             if (!e.target.dataset.triedFallback) {
               e.target.dataset.triedFallback = 'true';
-              e.target.src = '/images/home-page-1.jpeg';
+              e.target.src = '/images/home page 1.jpeg';
             }
           }}
         />

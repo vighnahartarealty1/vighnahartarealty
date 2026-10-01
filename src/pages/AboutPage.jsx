@@ -71,7 +71,7 @@ export default function AboutPage() {
             <ScrollReveal animation="fade-up" delay={120}>
               <div className="story-image-wrap">
                 <img 
-                  src={SITE.aboutImage2 || "/images/about-us-2.jpeg"} 
+                  src={SITE.aboutImage2 || "/images/about us 2.jpeg"} 
                   alt="Peaceful lush residential landscape"
                   className="story-main-img" 
                 />
