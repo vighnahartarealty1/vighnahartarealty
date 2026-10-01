@@ -29,7 +29,7 @@ export default function WhyUsPage() {
     },
     {
       title: "High Growth Corridors",
-      desc: "Carefully researched investment pockets in Bhavnagar and Saurashtra with proven historical capital appreciation.",
+      desc: "Carefully researched investment pockets in Mumbai 3.0, Navi Mumbai, Panvel, Uran, and Raigad corridors with high capital appreciation potential.",
       icon: "📈"
     },
     {
@@ -85,12 +85,12 @@ export default function WhyUsPage() {
               <div className="comparison-text">
                 <p className="intro-label">Schedule a Free Consultation</p>
                 <h2>Experience the location in person.</h2>
-                <p>We arrange private guided physical visits to all our plotting projects in Bhavnagar and surrounding regions with our senior land consultants.</p>
+                <p>We arrange private guided physical visits to all our plotting projects across the Mumbai 3.0 belt (Panvel, Uran, Pen, Khopoli, Alibaug) with our senior land consultants.</p>
               </div>
               <div className="comparison-action">
                 <Link to="/contact" className="btn btn-brown btn-glow">Book a Site Visit</Link>
                 <a 
-                  href="https://wa.me/919999999999?text=Hello%20Vighnaharta%20Realty%2C%20I%20would%20like%20to%20book%20a%20site%20visit."
+                  href={`https://wa.me/${SITE.whatsappNumber}?text=${encodeURIComponent('Hello Vighnaharta Realty, I would like to book a site visit in Mumbai 3.0.')}`}
                   className="btn btn-wa-fill"
                   target="_blank"
                   rel="noopener noreferrer"

@@ -77,9 +77,9 @@ const SITE_DATA = {
       whatsapp: "919000000000", // VERIFY-CLIENT dummy (country code + number)
       email: "info@vighnahartarealty.com", // VERIFY-CLIENT
       emailAlt: "sales@vighnahartarealty.com", // VERIFY-CLIENT
-      address: "Panvel, Navi Mumbai, Maharashtra", // VERIFY-CLIENT full office address
+      address: "Panvel, Navi Mumbai, Mumbai Metropolitan Region (MMR), Maharashtra", // Mumbai MMR office
       officeHours: "Monday – Saturday : 10:00 AM – 7:00 PM", // VERIFY-CLIENT
-      mapEmbed: "https://www.google.com/maps?q=Panvel%2C%20Maharashtra&output=embed"
+      mapEmbed: "https://www.google.com/maps?q=Panvel%2C%20Navi%20Mumbai%2C%20Maharashtra&output=embed"
     },
 
     social: [

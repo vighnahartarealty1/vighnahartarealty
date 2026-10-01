@@ -56,7 +56,7 @@ export default function ContactPage() {
       <PageBanner 
         badge="Direct Advisory &amp; Enquiries"
         title="Let's Find Your Ideal Place"
-        subtitle="Speak directly with our land and property specialists in Bhavnagar. We are here to guide your every step with clarity."
+        subtitle="Speak directly with our land and property specialists in Mumbai & Navi Mumbai. We are here to guide your every step with clarity."
         image={SITE.contactImage || "/images/contact us.jpeg"}
       />
 
@@ -129,14 +129,14 @@ export default function ContactPage() {
               {/* Map Area */}
               <div className="ct-map-area">
                 <iframe 
-                  title="Vighnaharta Realty Bhavnagar office location"
-                  src="https://www.google.com/maps?q=Waghawadi+Road,+Bhavnagar,+Gujarat+364002&output=embed" 
+                  title="Vighnaharta Realty Mumbai / Navi Mumbai office location"
+                  src={SITE.mapEmbed || "https://www.google.com/maps?q=Panvel%2C%20Navi%20Mumbai%2C%20Maharashtra&output=embed"} 
                   loading="lazy"
                   allowFullScreen
                   referrerPolicy="no-referrer-when-downgrade"
                 />
                 <a 
-                  href="https://www.google.com/maps/dir//Waghawadi+Road,+Bhavnagar,+Gujarat+364002" 
+                  href="https://www.google.com/maps/dir//Panvel,+Navi+Mumbai,+Maharashtra" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="ct-directions-btn"

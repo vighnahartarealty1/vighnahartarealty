@@ -77,8 +77,8 @@ export default function ContactSection() {
             </ul>
             <div className="map-wrap">
               <iframe 
-                title="Vighnaharta Realty office location"
-                src="https://www.google.com/maps?q=Bhavnagar%2C%20Gujarat&output=embed" 
+                title="Vighnaharta Realty Mumbai / Navi Mumbai office location"
+                src={SITE.mapEmbed || "https://www.google.com/maps?q=Panvel%2C%20Navi%20Mumbai%2C%20Maharashtra&output=embed"} 
                 loading="lazy"
               />
             </div>

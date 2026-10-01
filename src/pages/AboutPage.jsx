@@ -111,7 +111,7 @@ export default function AboutPage() {
             <div className="about-cta-banner">
               <div>
                 <h3>Ready to discuss your land requirements?</h3>
-                <p>Speak directly with our property advisory team in Bhavnagar.</p>
+                <p>Speak directly with our property advisory team in Mumbai &amp; Navi Mumbai.</p>
               </div>
               <div className="cta-btn-group">
                 <Link to="/contact" className="btn btn-brown btn-glow">Contact Our Team</Link>

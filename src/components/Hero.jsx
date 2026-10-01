@@ -99,7 +99,7 @@ export default function Hero({ searchQuery, setSearchQuery, onSearchSubmit }) {
           <div className="trust-badges">
             <div className="trust-brand">100% CLEAR TITLE</div>
             <div className="trust-brand">RERA COMPLIANT</div>
-            <div className="trust-brand">BHAVNAGAR PRIME</div>
+            <div className="trust-brand">MUMBAI PRIME</div>
             <div className="trust-brand">500+ FAMILIES</div>
             <div className="trust-brand">INSTANT REGISTRY</div>
           </div>
