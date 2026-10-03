@@ -48,13 +48,12 @@ export default function HomePage({ onOpenModal }) {
 
           <div className="grid">
             {featured.map((p, idx) => (
-              <ScrollReveal key={p.id} animation="fade-up" delay={idx * 120}>
-                <PropertyCard 
-                  property={p} 
-                  index={idx} 
-                  onOpenModal={onOpenModal} 
-                />
-              </ScrollReveal>
+              <PropertyCard 
+                key={p.id} 
+                property={p} 
+                index={idx} 
+                onOpenModal={onOpenModal} 
+              />
             ))}
           </div>
 

@@ -85,7 +85,7 @@ export default function WhyUsPage() {
               <div className="comparison-text">
                 <p className="intro-label">Schedule a Free Consultation</p>
                 <h2>Experience the location in person.</h2>
-                <p>We arrange private guided physical visits to all our plotting projects across the Mumbai 3.0 belt (Panvel, Uran, Pen, Khopoli, Alibaug) with our senior land consultants.</p>
+                <p>We arrange private guided physical visits to all our plotting projects across the Mumbai 3.0 belt (Panvel, Uran, Pen, Alibaug) with our senior land consultants.</p>
               </div>
               <div className="comparison-action">
                 <Link to="/contact" className="btn btn-brown btn-glow">Book a Site Visit</Link>

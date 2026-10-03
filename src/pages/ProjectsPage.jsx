@@ -61,7 +61,7 @@ export default function ProjectsPage({ onOpenModal }) {
       {/* Parallax Page Banner */}
       <PageBanner 
         title="Our Curated Projects"
-        subtitle="Explore verified residential plots and strategic investment land across Panvel, Alibaug, Khopoli, and the Mumbai 3.0 corridor."
+        subtitle="Explore verified commercial and strategic investment land across Panvel, Alibaug, and the Mumbai 3.0 corridor."
         image={SITE.projectsImage || "/images/projects.jpeg"}
         // breadcrumbs={[{ label: 'Projects & Locations' }]}
       />
@@ -127,7 +127,7 @@ export default function ProjectsPage({ onOpenModal }) {
             <div className="empty-catalog">
               <div className="empty-icon">🔍</div>
               <h3>No matching projects found</h3>
-              <p>We couldn't find any listings matching "{searchQuery}". Try clearing filters or searching for Panvel, Alibaug, Khopoli, or Plots.</p>
+              <p>We couldn't find any listings matching "{searchQuery}". Try clearing filters or searching for Panvel, Alibaug, Mumbai 3.0, or Plots.</p>
               <button 
                 type="button" 
                 className="btn btn-brown btn-glow"

@@ -218,14 +218,14 @@ const SITE_DATA = {
 
     /* ---------------------------- PROJECT 3 ---------------------------- */
     {
-      id: "khopoli-pali-residential-plots",
-      name: "Khopoli–Pali Residential Plots",
-      tagline: "Budget-friendly residential plots on the Panvel–Khopoli side",
-      type: "Residential Plots",
+      id: "mumbai-3-commercial-investment-plots",
+      name: "Mumbai 3.0 Commercial Investment Plots",
+      tagline: "Strategic commercial and investment plots in the emerging Mumbai 3.0 corridor",
+      type: "Commercial Investment Plots",
       status: "Available",
       featured: false,
-      city: "Khopoli",
-      location: "Khopoli – Pali, Raigad",
+      city: "Mumbai 3.0",
+      location: "Mumbai 3.0 Belt, Raigad",
       priceFrom: "₹ 1.5 Lakh*",
       priceNote: "Per Guntha (1,089 sq.ft), starting price",
       plotSizes: ["1 Guntha – 1,089 sq.ft", "Multiple Gunthas on request"],
@@ -240,20 +240,20 @@ const SITE_DATA = {
         "/images/projects.jpeg"
       ],
       overview:
-        "A practical option for buyers who want land at a lower entry ticket while staying connected to the MMR growth story. The Khopoli–Pali stretch offers green surroundings, good road links via the Panvel–Khopoli route and room for a future home, weekend plan or a patient long-term holding. Records are verified and the buying process stays as straightforward as on every other Vighnaharta plot.",
+        "A high-potential investment opportunity for buyers seeking strategic commercial and investment plots at an accessible entry ticket in the Mumbai 3.0 growth belt. Positioned with seamless connectivity to key infrastructure and transport links, these plots offer strong appreciation potential for business ventures, commercial setups, or long-term capital growth. All title records are 7/12 verified with clear, transparent documentation.",
       highlights: [
-        "Low entry price — a comfortable first land purchase",
-        "Green, peaceful surroundings with room to build",
-        "Connected via the Panvel–Khopoli route",
-        "Suitable for a home, weekend retreat or long-term hold",
+        "Low entry price — an accessible commercial investment opportunity",
+        "Strategic location within the Mumbai 3.0 growth belt",
+        "Connected via prime arterial highways and expressways",
+        "Suitable for commercial setups, business ventures or long-term holding",
         "7/12 checked and title trail verified",
         "Clear written agreement at booking",
         "Site visit arranged before you choose",
         "Full documentation guidance till mutation"
       ],
       plotDetails: [
-        { label: "Project Type",   value: "Residential Plots" },
-        { label: "Location",       value: "Khopoli – Pali" },
+        { label: "Project Type",   value: "Commercial Investment Plots" },
+        { label: "Location",       value: "Mumbai 3.0 Belt" },
         { label: "Unit",           value: "1 Guntha = 1,089 sq.ft" },
         { label: "Starting Price", value: "₹ 1.5 Lakh per Guntha" },
         { label: "Title",          value: "7/12 Verified, Clear Title" },
@@ -264,15 +264,15 @@ const SITE_DATA = {
         { label: "Availability",   value: "Registration Open" }
       ],
       connectivity: [
-        { place: "Panvel–Khopoli Expressway",         distance: "Nearby" },
-        { place: "Khopoli Railway Station",           distance: "Nearby" },
-        { place: "Panvel",                            distance: "Approach via expressway" },
+        { place: "Alibaug–Virar Corridor",            distance: "Nearby" },
         { place: "Navi Mumbai Int'l Airport (NMIA)",  distance: "Accessible via Panvel" },
+        { place: "Panvel Railway Station",            distance: "Nearby" },
         { place: "Mumbai–Pune Expressway",            distance: "Nearby" },
-        { place: "Local Market & Schools",            distance: "Nearby" }
+        { place: "JNPT Port Corridor",                distance: "Nearby" },
+        { place: "Local Markets & Commercial Hubs",   distance: "Nearby" }
       ],
       mapEmbed:
-        "https://www.google.com/maps?q=Khopoli%2C%20Maharashtra&output=embed"
+        "https://www.google.com/maps?q=Panvel%2C%20Maharashtra&output=embed"
     }
   ],
 
@@ -280,7 +280,7 @@ const SITE_DATA = {
   categories: [
     "All",
     "Investment Plots",
-    "Residential Plots"
+    "Commercial Investment Plots"
   ],
 
   /* =====================================================================
