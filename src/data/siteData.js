@@ -21,12 +21,12 @@ const SITE_DATA = {
     intro:
       "Vighnaharta Realty helps families and investors buy verified plots in the Mumbai 3.0 belt — Uran, Panvel and Pen — with clean 7/12 records and guidance right up to registration.",
 
-    heroImage: "/images/home page 1.jpeg",
-    aboutImage: "/images/about-us.jpeg",
-    aboutImage2: "/images/about us 2.jpeg",
-    whyChooseUsImage: "/images/why-choose-us.jpeg",
-    contactImage: "/images/contact us.jpeg",
-    projectsImage: "/images/projects.jpeg",
+    heroImage: "/images/home_page1.jpg",
+    aboutImage: "/images/about-us.jpg",
+    aboutImage2: "/images/about_us_2.jpg",
+    whyChooseUsImage: "/images/why-choose-us.jpg",
+    contactImage: "/images/contact_us.jpg",
+    projectsImage: "/images/projects.jpg",
 
     /* About page paragraphs */
     about: [
@@ -391,7 +391,7 @@ const SITE_DATA = {
         priceNote: "Indicative baseline per Guntha (1,089 sq.ft)",
         plotSizes: "1.5 to 5 Gunthas (1,633 – 5,445 sq.ft)",
         area: "Flexible plot configurations",
-        image: "",
+        image: "/images/mumbai_3_0_alibag_virar.jpeg",
         categoryBadge: "Highway Frontage",
         description: "High-visibility parcels positioned directly alongside expanding regional transport lifelines. Ideal for long-term capital appreciation, fleet logistics hubs, or commercial frontage ventures requiring immediate vehicular access.",
         highlights: [
@@ -420,7 +420,7 @@ const SITE_DATA = {
         priceNote: "Indicative baseline per Guntha (1,089 sq.ft)",
         plotSizes: "1 to 3 Gunthas (1,089 – 3,267 sq.ft)",
         area: "Individual demarcated layouts",
-        image: "",
+        image: "/images/3_lakh_plot.jpg",
         categoryBadge: "Scenic Residential",
         description: "Nestled amidst lush panoramic landscapes, these freehold residential parcels provide tranquil suburban living while maintaining effortless transit links to key economic epicenters.",
         highlights: [
@@ -449,7 +449,7 @@ const SITE_DATA = {
         priceNote: "Indicative baseline per Guntha (1,089 sq.ft)",
         plotSizes: "2 to 10 Gunthas (2,178 – 10,890 sq.ft)",
         area: "Comprehensive township sector zones",
-        image: "",
+        image: "/images/mumbai_3_0_1.jpeg",
         categoryBadge: "Integrated Sector",
         description: "Premium large-format land tracts embedded inside an organized master-planned township blueprint. Tailored for mixed-use residential quarters, boutique clusters, and community developments.",
         highlights: [
@@ -478,7 +478,7 @@ const SITE_DATA = {
         priceNote: "Indicative baseline per Guntha (1,089 sq.ft)",
         plotSizes: "2.5 to 12 Gunthas (2,722 – 13,068 sq.ft)",
         area: "Commercial plot configurations",
-        image: "",
+        image: "/images/mumbai_3_0_jnpt.png",
         categoryBadge: "Commercial Yield",
         description: "Strategically located parcels along bustling inter-district transit axes. Configured to accommodate warehouses, light assembly facilities, transit motels, or road-facing commercial retail showrooms.",
         highlights: [
@@ -507,7 +507,7 @@ const SITE_DATA = {
         priceNote: "Indicative baseline per Guntha (1,089 sq.ft)",
         plotSizes: "1 to 4 Gunthas (1,089 – 4,356 sq.ft)",
         area: "Phased greenfield development",
-        image: "",
+        image: "/images/mumbai_3_0_airport.jpeg",
         categoryBadge: "Future Growth Belt",
         description: "Positioned squarely in the pathway of the metropolitan growth spillover. A prime destination for patient, forward-thinking buyers looking to secure strategic land parcels ahead of urban consolidation.",
         highlights: [
@@ -536,7 +536,7 @@ const SITE_DATA = {
         priceNote: "Indicative baseline per Guntha (1,089 sq.ft)",
         plotSizes: "1.2 to 3.5 Gunthas (1,306 – 3,811 sq.ft)",
         area: "Demarcated luxury villa plots",
-        image: "",
+        image: "/images/1_5lakh.jpg",
         categoryBadge: "High-Demand Suburban",
         description: "Refined residential plots situated near thriving coastal suburbs. Combines high everyday liveability with premier proximity to upcoming trans-harbour corridors and world-class commercial sectors.",
         highlights: [
