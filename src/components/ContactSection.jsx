@@ -66,13 +66,13 @@ export default function ContactSection() {
             </p>
             <ul className="contact-list">
               <li>
-                Phone: <a href={`tel:+${SITE.whatsappNumber}`}>{SITE.phoneDisplay}</a>
+                <i className="fa-solid fa-phone" /> Phone: <a href={`tel:+${SITE.whatsappNumber}`}>{SITE.phoneDisplay}</a>
               </li>
               <li>
-                Email: <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
+                <i className="fa-solid fa-envelope" /> Email: <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
               </li>
               <li>
-                Office: {SITE.address}
+                <i className="fa-solid fa-location-dot" /> Office: {SITE.address}
               </li>
             </ul>
             <div className="map-wrap">

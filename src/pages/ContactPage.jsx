@@ -53,12 +53,7 @@ export default function ContactPage() {
 
   return (
     <div className="page-contact">
-      <PageBanner 
-        badge="Direct Advisory &amp; Enquiries"
-        title="Let's Find Your Ideal Place"
-        subtitle="Speak directly with our land and property specialists in Mumbai & Navi Mumbai. We are here to guide your every step with clarity."
-        image={SITE.contactImage || "/images/contact us.jpeg"}
-      />
+      <PageBanner badge="Direct Advisory & Enquiries" title="Let's Find Your Ideal Place" subtitle="Speak directly with our land and property specialists in Mumbai & Navi Mumbai. We are here to guide your every step with clarity." theme="contact" image={SITE.contactImage} />
 
       {/* ─── Section A: Centered Introduction ─── */}
       <section className="section ct-intro-section">

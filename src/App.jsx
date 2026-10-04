@@ -13,6 +13,7 @@ import ProjectsPage from './pages/ProjectsPage';
 import AboutPage from './pages/AboutPage';
 import WhyUsPage from './pages/WhyUsPage';
 import ContactPage from './pages/ContactPage';
+import Mumbai3Page from './pages/Mumbai3Page';
 import NotFoundPage from './pages/NotFoundPage';
 
 export default function App() {
@@ -33,6 +34,18 @@ export default function App() {
             <Route 
               path="/" 
               element={<HomePage onOpenModal={setSelectedProperty} />} 
+            />
+            <Route 
+              path="/mumbai-3.0" 
+              element={<Mumbai3Page onOpenModal={setSelectedProperty} />} 
+            />
+            <Route 
+              path="/mumbai-3" 
+              element={<Mumbai3Page onOpenModal={setSelectedProperty} />} 
+            />
+            <Route 
+              path="/mumbai3" 
+              element={<Mumbai3Page onOpenModal={setSelectedProperty} />} 
             />
             <Route 
               path="/projects" 

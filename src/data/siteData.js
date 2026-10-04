@@ -1,7 +1,8 @@
 /* =========================================================================
    VIGHNAHARTA REALTY — MASTER DATA FILE
    -------------------------------------------------------------------------
-   ➜  EDIT EVERYTHING HERE. No other file needs to be touched for content.
+   ➜  EDIT EVERYTHING HERE. All property listings, company details,
+      and Mumbai 3.0 portal data are centralized in this file.
 
    ⚠ Lines marked  // VERIFY-CLIENT  hold assumed / dummy values (phone, email,
      address, year, hours, RERA). Get the real ones from the client before launch.
@@ -42,24 +43,24 @@ const SITE_DATA = {
 
     /* Our Values */
     values: [
-      { icon: "🤝", title: "Honesty First", text: "Straight answers about the land, the price and the process. If something is not right for you, we will say so." },
-      { icon: "📜", title: "Paperwork Before Promises", text: "We let documents do the talking. Nothing is offered until the records have been checked." },
-      { icon: "🔍", title: "Open Communication", text: "Titles, records and terms are shared with you before you book, so you never decide in the dark." },
-      { icon: "🚶", title: "No-Pressure Buying", text: "You visit, you compare, you decide. We never use urgency tactics to close a deal." },
-      { icon: "📈", title: "Growth-Minded Locations", text: "We pick land near real infrastructure — airport, sea link, highways and rail — where long-term demand is being built." },
-      { icon: "🛡️", title: "Long-Term Support", text: "Our job doesn't end at the sale deed. We stay available for mutation and any questions afterwards." }
+      { icon: "fa-solid fa-handshake",       title: "Honesty First",             text: "Straight answers about the land, the price and the process. If something is not right for you, we will say so." },
+      { icon: "fa-solid fa-file-lines",      title: "Paperwork Before Promises",  text: "We let documents do the talking. Nothing is offered until the records have been checked." },
+      { icon: "fa-solid fa-comments",        title: "Open Communication",         text: "Titles, records and terms are shared with you before you book, so you never decide in the dark." },
+      { icon: "fa-solid fa-person-walking",  title: "No-Pressure Buying",        text: "You visit, you compare, you decide. We never use urgency tactics to close a deal." },
+      { icon: "fa-solid fa-chart-line",      title: "Growth-Minded Locations",    text: "We pick land near real infrastructure — airport, sea link, highways and rail — where long-term demand is being built." },
+      { icon: "fa-solid fa-shield-halved",   title: "Long-Term Support",          text: "Our job doesn't end at the sale deed. We stay available for mutation and any questions afterwards." }
     ],
 
     /* Why Choose Us */
     whyChooseUs: [
-      { icon: "✅", title: "Verified 7/12 Records", text: "Every plot's 7/12 extract is reviewed in detail — owner, survey number, area and any encumbrance." },
-      { icon: "🔗", title: "Clean Title Chain", text: "We cross-check the 8A record and follow the title trail so there are no surprises later." },
-      { icon: "📍", title: "Inside the Mumbai 3.0 Belt", text: "Plots placed in the Uran–Panvel–Pen region, close to NMIA, Atal Setu and JNPT." },
-      { icon: "🗺️", title: "Site Visits, Not Just Photos", text: "Walk the land, check the access road and boundary, and see the surroundings before you commit." },
-      { icon: "📝", title: "Clear Written Agreement", text: "Plot details, agreed price and registration timeline are put in writing at the time of booking." },
-      { icon: "🏛️", title: "Registration Support", text: "We coordinate the sale deed, stamp duty guidance and sub-registrar formalities so you don't chase papers." },
-      { icon: "📄", title: "Mutation Handled for You", text: "We help file the 7/12 mutation at the Talathi office so your name reaches the land record." },
-      { icon: "💬", title: "Free Consultation", text: "Talk to our team about budget, location and goals with zero obligation." }
+      { icon: "fa-solid fa-circle-check",     title: "Verified 7/12 Records",       text: "Every plot's 7/12 extract is reviewed in detail — owner, survey number, area and any encumbrance." },
+      { icon: "fa-solid fa-link",             title: "Clean Title Chain",            text: "We cross-check the 8A record and follow the title trail so there are no surprises later." },
+      { icon: "fa-solid fa-location-dot",     title: "Inside the Mumbai 3.0 Belt",   text: "Plots placed in the Uran–Panvel–Pen region, close to NMIA, Atal Setu and JNPT." },
+      { icon: "fa-solid fa-binoculars",       title: "Site Visits, Not Just Photos", text: "Walk the land, check the access road and boundary, and see the surroundings before you commit." },
+      { icon: "fa-solid fa-file-signature",   title: "Clear Written Agreement",      text: "Plot details, agreed price and registration timeline are put in writing at the time of booking." },
+      { icon: "fa-solid fa-building-columns", title: "Registration Support",         text: "We coordinate the sale deed, stamp duty guidance and sub-registrar formalities so you don't chase papers." },
+      { icon: "fa-solid fa-stamp",            title: "Mutation Handled for You",     text: "We help file the 7/12 mutation at the Talathi office so your name reaches the land record." },
+      { icon: "fa-solid fa-headset",          title: "Free Consultation",            text: "Talk to our team about budget, location and goals with zero obligation." }
     ],
 
     /* Home page stats */
@@ -287,14 +288,366 @@ const SITE_DATA = {
      3. NAVIGATION (Main Menu)
      ===================================================================== */
   navigation: [
-    { label: "Home",       route: "#/" },
-    { label: "About Us",   route: "#/about" },
-    { label: "Projects",   route: "#/projects" },
-    { label: "Contact Us", route: "#/contact" }
-  ]
+    { label: "Home",       route: "/" },
+    { label: "Mumbai 3.0", route: "/mumbai-3.0" },
+    { label: "About Us",   route: "/about" },
+    { label: "Projects",   route: "/projects" },
+    { label: "Why Us",     route: "/why-us" },
+    { label: "Contact Us", route: "/contact" }
+  ],
+
+  /* =====================================================================
+     4. MUMBAI 3.0 DEDICATED PORTAL DATA
+     ---------------------------------------------------------------------
+     All image paths are configured here. Leave "" for fallback visuals
+     or paste your image paths when available.
+     ===================================================================== */
+  mumbai3: {
+    images: {
+      heroBg: "/images/Hero_mumbai3_0.jpg",
+      ctaBg: "",  // e.g. "/images/cta-bg.jpg"
+      overview: "/images/mumbai_3_0_1.jpeg",
+      property1: "", // Highway-Connected Logistics & Commercial Plot
+      property2: "", // Greenfield Crest Residential Plot
+      property3: "", // Aura Solis Township Development
+      property4: "", // Gateway Nexus Commercial Land
+      property5: "", // Horizon Nova Greenfield Expansion Zone
+      property6: "", // Emerald Crest Executive Villa Plot
+      locHighway: "",
+      locResidential: "",
+      locCommercial: "",
+      locUrban: ""
+    },
+
+    infrastructure: [
+      {
+        title: "MMRDA MoUs at the World Economic Forum",
+        image: "/images/mumbai_3_0_2.png",
+        article: true,
+        description: "MMRDA announced investment agreements at the World Economic Forum."
+      },
+      {
+        title: "Mumbai 3.0 in the MMRDA Budget",
+        image: "/images/mumbai_3_0_3.png",
+        article: true,
+        description: "The MMRDA budget includes funding for Mumbai 3.0 development."
+      },
+      {
+        title: "Metro Connectivity",
+        image: "/images/METRO.jpeg",
+        description: "Metro expansion is part of the wider effort to connect communities and key destinations across the region."
+      },
+      {
+        title: "Alibag–Virar Corridor",
+        image: "/images/mumbai_3_0_alibag_virar.jpeg",
+        description: "The proposed corridor is intended to strengthen east–west movement across the Mumbai Metropolitan Region."
+      },
+      {
+        title: "Atal Setu",
+        image: "/images/mumbai_3_0_atal_setu.jpeg",
+        description: "The trans-harbour link provides a direct road connection between South Mumbai and Navi Mumbai."
+      },
+      {
+        title: "JNPT Port",
+        image: "/images/mumbai_3_0_jnpt.png",
+        description: "A key logistics and trade hub supporting economic activity across the wider Mumbai region."
+      },
+      {
+        title: "Railway Connectivity",
+        image: "/images/mumbai_3_0_railway.jpeg",
+        description: "Rail links connect growing residential and commercial areas with established urban centres."
+      }
+    ],
+
+    overview: {
+      title: "A New Chapter for the Mumbai Region",
+      paragraphs: [
+        "Mumbai 3.0 refers to an emerging planned urban region within the Mumbai Metropolitan Region, being shaped through state and MMRDA-led planning across parts of Uran, Panvel and Pen. The wider plan covers around 124 villages.",
+        "With projects such as Navi Mumbai International Airport and Atal Setu, alongside proposed transport corridors, the area is attracting attention as a future growth centre between Mumbai and Navi Mumbai.",
+        "Vighnaharta Realty offers plots in this belt with a focus on verified land records and clear guidance, helping buyers assess opportunities with care and build a considered long-term portfolio."
+      ]
+    },
+
+    categories: [
+      "All Categories",
+      "Highway-Connected Corridors",
+      "Residential Plots",
+      "Township Developments",
+      "Commercial Land",
+      "Future Development Zones",
+      "Residential Investment Opportunities"
+    ],
+
+    properties: [
+      {
+        id: "m3-highway-corridor-parcel",
+        name: "Arterial Heights Logistics & Highway Plots",
+        tagline: "Strategic frontage along the premier six-lane multimodal arterial corridor",
+        type: "Highway-Connected Corridors",
+        status: "Active Exploration",
+        city: "Uran Corridor",
+        location: "NH-4B Arterial Belt, Uran Sub-District",
+        indicativePrice: "₹ 4.5 Lakh / Guntha*",
+        priceNote: "Indicative baseline per Guntha (1,089 sq.ft)",
+        plotSizes: "1.5 to 5 Gunthas (1,633 – 5,445 sq.ft)",
+        area: "Flexible plot configurations",
+        image: "",
+        categoryBadge: "Highway Frontage",
+        description: "High-visibility parcels positioned directly alongside expanding regional transport lifelines. Ideal for long-term capital appreciation, fleet logistics hubs, or commercial frontage ventures requiring immediate vehicular access.",
+        highlights: [
+          "Direct 60-meter multi-lane highway frontage",
+          "Immediate proximity to freight interchange junctions",
+          "Unrestricted heavy payload vehicular approach",
+          "Clear revenue demarcations and 7/12 check completed"
+        ],
+        connectivity: [
+          { place: "NH-4B Multi-Lane Arterial", distance: "Direct Frontage (0 km)" },
+          { place: "JNPT Freight Terminus", distance: "~8 km / 12 mins" },
+          { place: "Atal Setu (MTHL) Expressway", distance: "~14 km / 18 mins" },
+          { place: "Upcoming Cargo Corridor", distance: "~6 km" }
+        ],
+        investmentType: "Commercial & Logistics Growth"
+      },
+      {
+        id: "m3-greenfield-crest-residential",
+        name: "Greenfield Crest Valley Enclave",
+        tagline: "Serene scenic residential parcels set against pristine foothill contours",
+        type: "Residential Plots",
+        status: "Active Exploration",
+        city: "Panvel South",
+        location: "Panvel South Green Foothills, Near Golf Greens",
+        indicativePrice: "₹ 3.2 Lakh / Guntha*",
+        priceNote: "Indicative baseline per Guntha (1,089 sq.ft)",
+        plotSizes: "1 to 3 Gunthas (1,089 – 3,267 sq.ft)",
+        area: "Individual demarcated layouts",
+        image: "",
+        categoryBadge: "Scenic Residential",
+        description: "Nestled amidst lush panoramic landscapes, these freehold residential parcels provide tranquil suburban living while maintaining effortless transit links to key economic epicenters.",
+        highlights: [
+          "Surrounded by natural greenery and mountain views",
+          "Internal 30-foot asphalt access roads with drainage",
+          "Demarcated perimeter boundary stones for each plot",
+          "Verified title chain and hassle-free registration guidance"
+        ],
+        connectivity: [
+          { place: "Old Mumbai–Pune Highway", distance: "~6 km / 9 mins" },
+          { place: "Panvel Central Junction", distance: "~10 km / 15 mins" },
+          { place: "Proposed Metro Extension", distance: "~8 km / 12 mins" },
+          { place: "Reputed Schools & Healthcare", distance: "Within 7 km" }
+        ],
+        investmentType: "Custom Villa & Weekend Home"
+      },
+      {
+        id: "m3-aura-solis-township",
+        name: "Aura Solis Integrated Township Lands",
+        tagline: "Master-planned sector parcels inside the core urban expansion grid",
+        type: "Township Developments",
+        status: "Active Exploration",
+        city: "Chirle Belt",
+        location: "Chirle Priority Growth Node, Mumbai 3.0 Core",
+        indicativePrice: "₹ 5.8 Lakh / Guntha*",
+        priceNote: "Indicative baseline per Guntha (1,089 sq.ft)",
+        plotSizes: "2 to 10 Gunthas (2,178 – 10,890 sq.ft)",
+        area: "Comprehensive township sector zones",
+        image: "",
+        categoryBadge: "Integrated Sector",
+        description: "Premium large-format land tracts embedded inside an organized master-planned township blueprint. Tailored for mixed-use residential quarters, boutique clusters, and community developments.",
+        highlights: [
+          "Broad 40-foot main central boulevard access",
+          "Earmarked civic amenities and open green parks",
+          "Dedicated conduits for underground electrification & water",
+          "Direct linkage to trans-harbour transit corridors"
+        ],
+        connectivity: [
+          { place: "Atal Setu (MTHL) Interchange", distance: "~7 km / 10 mins" },
+          { place: "Navi Mumbai Int'l Airport (NMIA)", distance: "~16 km / 20 mins" },
+          { place: "Belapur–Uran Suburban Rail", distance: "~4 km / 6 mins" },
+          { place: "Regional Smart City Zone", distance: "Adjacent Node" }
+        ],
+        investmentType: "Integrated Community Growth"
+      },
+      {
+        id: "m3-gateway-nexus-commercial",
+        name: "Gateway Nexus Commercial Land Parcels",
+        tagline: "High-yield commercial parcels engineered for retail, warehousing and offices",
+        type: "Commercial Land",
+        status: "Active Exploration",
+        city: "Pen Sub-Zone",
+        location: "Pen Commercial & Industrial Corridor",
+        indicativePrice: "₹ 2.1 Lakh / Guntha*",
+        priceNote: "Indicative baseline per Guntha (1,089 sq.ft)",
+        plotSizes: "2.5 to 12 Gunthas (2,722 – 13,068 sq.ft)",
+        area: "Commercial plot configurations",
+        image: "",
+        categoryBadge: "Commercial Yield",
+        description: "Strategically located parcels along bustling inter-district transit axes. Configured to accommodate warehouses, light assembly facilities, transit motels, or road-facing commercial retail showrooms.",
+        highlights: [
+          "Generous commercial frontage with wide entry gates",
+          "Compatible with light commercial & warehouse zoning",
+          "High capacity utility supply & telecom connectivity",
+          "Low initial capital outlay with substantial upside"
+        ],
+        connectivity: [
+          { place: "Mumbai–Goa National Highway", distance: "~2 km / 4 mins" },
+          { place: "Pen Central Railway Station", distance: "~5 km / 8 mins" },
+          { place: "Panvel–Khopoli Link Road", distance: "~18 km / 22 mins" },
+          { place: "Local Wholesale Hubs", distance: "Within 3 km" }
+        ],
+        investmentType: "Commercial Enterprise & Storage"
+      },
+      {
+        id: "m3-horizon-nova-greenfield",
+        name: "Horizon Nova Greenfield Expansion Plots",
+        tagline: "Early-stage capital appreciation acreage within designated regional masterplans",
+        type: "Future Development Zones",
+        status: "Active Exploration",
+        city: "Karanjade South",
+        location: "Karanjade South Growth Fringe, MMR Region",
+        indicativePrice: "₹ 2.8 Lakh / Guntha*",
+        priceNote: "Indicative baseline per Guntha (1,089 sq.ft)",
+        plotSizes: "1 to 4 Gunthas (1,089 – 4,356 sq.ft)",
+        area: "Phased greenfield development",
+        image: "",
+        categoryBadge: "Future Growth Belt",
+        description: "Positioned squarely in the pathway of the metropolitan growth spillover. A prime destination for patient, forward-thinking buyers looking to secure strategic land parcels ahead of urban consolidation.",
+        highlights: [
+          "Identified inside the long-term regional development draft",
+          "Clean 7/12 extract checked with verified mutation trail",
+          "Fast-evolving infrastructure and planned bypasses nearby",
+          "Attractive low-entry valuation with robust growth headroom"
+        ],
+        connectivity: [
+          { place: "Proposed Multi-Modal Corridor", distance: "~5 km / 7 mins" },
+          { place: "NMIA Aerotropolis Fringe", distance: "~12 km / 16 mins" },
+          { place: "Panvel Suburban Terminal", distance: "~9 km / 14 mins" },
+          { place: "Coastal Ring Boulevard", distance: "Under Construction" }
+        ],
+        investmentType: "Long-Horizon Value Investment"
+      },
+      {
+        id: "m3-emerald-crest-villas",
+        name: "Emerald Crest Executive Villa Estates",
+        tagline: "Exclusive boutique plotted community close to emerging coastal nodes",
+        type: "Residential Investment Opportunities",
+        status: "Active Exploration",
+        city: "Ulwe-Dronagiri",
+        location: "Ulwe–Dronagiri Inter-Belt, Coastal MMR",
+        indicativePrice: "₹ 6.2 Lakh / Guntha*",
+        priceNote: "Indicative baseline per Guntha (1,089 sq.ft)",
+        plotSizes: "1.2 to 3.5 Gunthas (1,306 – 3,811 sq.ft)",
+        area: "Demarcated luxury villa plots",
+        image: "",
+        categoryBadge: "High-Demand Suburban",
+        description: "Refined residential plots situated near thriving coastal suburbs. Combines high everyday liveability with premier proximity to upcoming trans-harbour corridors and world-class commercial sectors.",
+        highlights: [
+          "Rapidly urbanizing neighborhood with established civic amenities",
+          "Immediate registry readiness with clear freehold documentation",
+          "Scenic elevated terrain with superior natural drainage",
+          "Strong historical appreciation and high rental demand surrounding"
+        ],
+        connectivity: [
+          { place: "Dronagiri Railway Station", distance: "~4 km / 6 mins" },
+          { place: "Uran Coastal Boulevard", distance: "~5 km / 8 mins" },
+          { place: "Atal Setu Fast Interchange", distance: "~9 km / 12 mins" },
+          { place: "Belapur CBD Node", distance: "~22 km / 25 mins" }
+        ],
+        investmentType: "Suburban Villa & Capital Security"
+      }
+    ],
+
+    advantages: [
+      {
+        icon: "fa-solid fa-compass",
+        title: "Connectivity & Regional Arterials",
+        text: "Seamless integration with Atal Setu (MTHL), upcoming Navi Mumbai International Airport, multimodal ring roads, and direct rail networks."
+      },
+      {
+        icon: "fa-solid fa-chart-line",
+        title: "Long-Term Development Potential",
+        text: "Strategically located along Maharashtra's primary economic corridor, benefiting from massive state infrastructure investments and urban growth."
+      },
+      {
+        icon: "fa-solid fa-building-columns",
+        title: "Diverse Property Options",
+        text: "From accessible entry-level residential plots to prime commercial acreage and master-planned township sectors tailored to varied investment horizons."
+      },
+      {
+        icon: "fa-solid fa-location-dot",
+        title: "Location-Based Opportunities",
+        text: "Handpicked locations situated within the priority urban expansion zone, offering strong structural advantages over saturated city markets."
+      },
+      {
+        icon: "fa-solid fa-file-shield",
+        title: "Transparent Property Information",
+        text: "Every property comes with verified 7/12 land records, clear title trails, and comprehensive legal and mutation assistance from day one."
+      }
+    ],
+
+    stats: [
+      {
+        value: "6+",
+        label: "Property Categories",
+        sub: "Plots, Commercial, Townships & Corridors"
+      },
+      {
+        value: "24+",
+        label: "Curated Locations",
+        sub: "Across Uran, Panvel, Pen & Alibaug"
+      },
+      {
+        value: "100%",
+        label: "Title Verification",
+        sub: "Rigorous 7/12 & Revenue Check Standard"
+      },
+      {
+        value: "4x",
+        label: "Major Transit Hubs",
+        sub: "Airport, Sea Link, Rail & Expressways"
+      }
+    ],
+
+    locationHighlights: [
+      {
+        id: "corridor-highway",
+        title: "Highway-Accessible Arterials",
+        tag: "High Connectivity",
+        subtitle: "NH-4B & Multimodal Express Belts",
+        description: "Properties with direct or immediate connectivity to primary transit corridors, ideal for commercial hubs, logistics setups, and high-visibility investments.",
+        highlights: ["Direct multi-lane highway frontage", "Rapid freight & transit connectivity", "High commercial appreciation potential"],
+        image: "/images/mumbai_3_0_airport.jpeg"
+      },
+      {
+        id: "corridor-residential",
+        title: "Developing Residential Corridors",
+        tag: "Suburban Living",
+        subtitle: "Panvel–Uran Scenic Greenbelt",
+        description: "Quiet, green residential expanses planned for villa communities and weekend retreats, balancing scenic tranquility with smooth city commutes.",
+        highlights: ["Lush natural surroundings", "Planned internal asphalt roads", "Gated enclave demarcations"],
+        image: "/images/mumbai_3_0_1.jpeg"
+      },
+      {
+        id: "corridor-commercial",
+        title: "Emerging Commercial & Logistics Zones",
+        tag: "Business Expansion",
+        subtitle: "Pen & Port-Adjacent Industrial Hubs",
+        description: "Robust industrial and commercial zones designed to support Maharashtra's expanding logistics, warehousing, and commercial enterprises.",
+        highlights: ["Heavy-vehicle compliant access", "High utility load readiness", "Accessible entry pricing per Guntha"],
+        image: "/images/mumbai_3_0_jnpt.png"
+      },
+      {
+        id: "corridor-urban",
+        title: "Established Urban Extensions",
+        tag: "Metropolitan Growth",
+        subtitle: "Ulwe, Dronagiri & Chirle Sectors",
+        description: "Rapidly maturing suburban nodes situated close to rail lines, schools, hospitals, and direct Atal Setu access into South Mumbai.",
+        highlights: ["Immediate urban infrastructure", "High liveability quotient", "Steady, reliable capital growth"],
+        image: "/images/METRO.jpeg"
+      }
+    ]
+  }
 };
 
-const { company } = SITE_DATA;
+const { company, mumbai3 } = SITE_DATA;
 
 export const CATEGORIES = SITE_DATA.categories && SITE_DATA.categories.length > 0
   ? SITE_DATA.categories
@@ -346,3 +699,16 @@ export const FAQS = company.whyChooseUs.map((item) => ({
   question: item.title,
   answer: item.text
 }));
+
+// Mumbai 3.0 Exports
+export const MUMBAI3_IMAGES = mumbai3.images;
+export const MUMBAI3_INFRASTRUCTURE = mumbai3.infrastructure;
+export const MUMBAI3_OVERVIEW = mumbai3.overview;
+export const MUMBAI3_CATEGORIES = mumbai3.categories;
+export const MUMBAI3_PROPERTIES = mumbai3.properties.map((p) => ({
+  ...p,
+  image: mumbai3.images[p.id] || p.image || ""
+}));
+export const MUMBAI3_ADVANTAGES = mumbai3.advantages;
+export const MUMBAI3_STATS = mumbai3.stats;
+export const MUMBAI3_LOCATION_HIGHLIGHTS = mumbai3.locationHighlights;

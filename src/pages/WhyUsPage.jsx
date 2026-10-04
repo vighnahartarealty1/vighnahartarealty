@@ -10,43 +10,43 @@ export default function WhyUsPage() {
     {
       title: "100% Clear Title Guarantee",
       desc: "Every project has clear, marketable freehold title certified by seasoned real estate legal counsel.",
-      icon: "⚖️"
+      icon: "fa-solid fa-scale-balanced"
     },
     {
       title: "RERA & Revenue Compliant",
       desc: "Full adherence to town planning, NA (Non-Agricultural) sanctions, and local municipal zoning norms.",
-      icon: "📜"
+      icon: "fa-solid fa-file-contract"
     },
     {
       title: "Direct Owner Registry",
       desc: "Instant registration directly in your name with zero middlemen ambiguity and genuine government stamp duty assistance.",
-      icon: "✍️"
+      icon: "fa-solid fa-pen-to-square"
     },
     {
       title: "Infrastructure Ready",
       desc: "Internal roads, boundary demarcation, water access, and electricity lines ready for prompt home construction.",
-      icon: "🏗️"
+      icon: "fa-solid fa-road"
     },
     {
       title: "High Growth Corridors",
       desc: "Carefully researched investment pockets in Mumbai 3.0, Navi Mumbai, Panvel, Uran, and Raigad corridors with high capital appreciation potential.",
-      icon: "📈"
+      icon: "fa-solid fa-chart-line"
     },
     {
       title: "Post-Sale Assistance",
       desc: "We assist with architectural consultation, municipal water connection, boundary protection, and site management.",
-      icon: "🛡️"
+      icon: "fa-solid fa-shield-halved"
     }
   ];
 
   return (
     <div className="page-why-us">
       <PageBanner 
-        badge="Trust &amp; Verification"
+        badge="Trust & Verification"
         title="Why Choose Vighnaharta Realty"
         subtitle="The small details matter when you are choosing land for a very big future. Discover our proven standard of trust."
-        image={SITE.whyChooseUsImage || "/images/why-choose-us.jpeg"}
-        // breadcrumbs={[{ label: 'Why Us' }]}
+        theme="whyus"
+        image={SITE.whyChooseUsImage}
       />
 
       {/* Guarantees Grid */}
@@ -64,7 +64,7 @@ export default function WhyUsPage() {
             {guarantees.map((item, idx) => (
               <ScrollReveal key={item.title} animation="fade-up" delay={idx * 80}>
                 <div className="guarantee-card">
-                  <div className="guarantee-icon">{item.icon}</div>
+                  <div className="guarantee-icon"><i className={item.icon} /></div>
                   <h3>{item.title}</h3>
                   <p>{item.desc}</p>
                 </div>

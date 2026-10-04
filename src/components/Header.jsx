@@ -74,6 +74,12 @@ export default function Header({ isHidden = false }) {
               Home
             </NavLink>
             <NavLink 
+              to="/mumbai-3.0" 
+              className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
+            >
+              Mumbai 3.0
+            </NavLink>
+            <NavLink 
               to="/about" 
               className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
             >
@@ -142,6 +148,13 @@ export default function Header({ isHidden = false }) {
                 onClick={() => setMenuOpen(false)}
               >
                 Home
+              </NavLink>
+              <NavLink 
+                to="/mumbai-3.0" 
+                className={({ isActive }) => `drawer-link ${isActive ? 'active-capsule' : ''}`}
+                onClick={() => setMenuOpen(false)}
+              >
+                Mumbai 3.0
               </NavLink>
               <NavLink 
                 to="/about" 

@@ -10,22 +10,22 @@ export default function AboutPage() {
     {
       title: "100% Clear Title Verification",
       desc: "Every single piece of land undergoes multi-layer title clearance, revenue record validation, and physical boundary demarcation.",
-      icon: "📜"
+      icon: "fa-solid fa-file-shield"
     },
     {
       title: "Strategic Growth Locations",
       desc: "We prioritize upcoming corridors with planned infrastructure, highway accessibility, and natural tranquility.",
-      icon: "📍"
+      icon: "fa-solid fa-location-dot"
     },
     {
       title: "Transparent & Fair Deals",
       desc: "No hidden charges, no ambiguous paperwork. We walk you through every document before any financial commitment.",
-      icon: "🤝"
+      icon: "fa-solid fa-handshake"
     },
     {
       title: "Enduring Relationship",
       desc: "From your initial enquiry to registry, possession, and future construction guidance, our team stands by you.",
-      icon: "🏡"
+      icon: "fa-solid fa-house-chimney-heart"
     }
   ];
 
@@ -34,7 +34,8 @@ export default function AboutPage() {
       <PageBanner 
         title="Decisions with Clarity. Places with Promise."
         subtitle="We help families, creators, and investors discover verified plots and peaceful sanctuaries with complete trust."
-        image={SITE.aboutImage || "/images/about-us.jpeg"}
+        theme="about"
+        image={SITE.aboutImage}
       />
 
       {/* Story & Philosophy */}
@@ -69,12 +70,34 @@ export default function AboutPage() {
             </ScrollReveal>
 
             <ScrollReveal animation="fade-up" delay={120}>
-              <div className="story-image-wrap">
-                <img 
-                  src={SITE.aboutImage2 || "/images/about us 2.jpeg"} 
-                  alt="Peaceful lush residential landscape"
-                  className="story-main-img" 
-                />
+              <div className="story-visual-card">
+                <div className="story-vc-top">
+                  <i className="fa-solid fa-building-columns story-vc-main-icon" />
+                  <p className="story-vc-tagline">Trusted since 2023</p>
+                </div>
+                <div className="story-vc-stats">
+                  <div className="story-vc-stat">
+                    <i className="fa-solid fa-users" />
+                    <strong>500+</strong>
+                    <span>Families Guided</span>
+                  </div>
+                  <div className="story-vc-divider" />
+                  <div className="story-vc-stat">
+                    <i className="fa-solid fa-circle-check" />
+                    <strong>100%</strong>
+                    <span>Title Cleared</span>
+                  </div>
+                  <div className="story-vc-divider" />
+                  <div className="story-vc-stat">
+                    <i className="fa-solid fa-map-location-dot" />
+                    <strong>10+</strong>
+                    <span>Yrs Regional Trust</span>
+                  </div>
+                </div>
+                <div className="story-vc-badge">
+                  <i className="fa-solid fa-shield-halved" />
+                  <span>RERA &amp; Revenue Compliant</span>
+                </div>
               </div>
             </ScrollReveal>
           </div>
@@ -99,7 +122,7 @@ export default function AboutPage() {
             {pillars.map((pillar, idx) => (
               <ScrollReveal key={pillar.title} animation="fade-up" delay={idx * 100}>
                 <div className="pillar-card">
-                  <span className="pillar-icon">{pillar.icon}</span>
+                  <span className="pillar-icon"><i className={pillar.icon} /></span>
                   <h3>{pillar.title}</h3>
                   <p>{pillar.desc}</p>
                 </div>

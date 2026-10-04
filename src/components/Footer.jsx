@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { SITE } from '../data/siteData';
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -9,24 +10,48 @@ export default function Footer() {
       <div className="wrap footer-inner">
         <div>
           <Link to="/" className="logo" aria-label="Vighnaharta Realty home">
-            <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true">
-              <path d="M15 2 L28 26 H2 Z" fill="none" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
-              <circle cx="15" cy="17" r="3" fill="currentColor" />
-            </svg>
+            <i className="fa-solid fa-building-columns" style={{ fontSize: '22px', color: 'var(--clay,#c9a96e)' }} />
             <span>Vighnaharta <em>Realty</em></span>
           </Link>
           <p className="tagline">Thoughtfully chosen. Clearly presented.</p>
+
+          {/* Quick contact in footer */}
+          <div className="footer-contact-row">
+            <a href={`tel:+${SITE.whatsappNumber}`} className="footer-contact-item">
+              <i className="fa-solid fa-phone" />
+              <span>{SITE.phoneDisplay}</span>
+            </a>
+            <a href={`mailto:${SITE.email}`} className="footer-contact-item">
+              <i className="fa-solid fa-envelope" />
+              <span>{SITE.email}</span>
+            </a>
+            <a
+              href={`https://wa.me/${SITE.whatsappNumber}?text=${encodeURIComponent('Hello Vighnaharta Realty, I would like to enquire.')}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-contact-item footer-wa"
+            >
+              <i className="fa-brands fa-whatsapp" />
+              <span>WhatsApp</span>
+            </a>
+          </div>
         </div>
+
         <nav className="footer-nav" aria-label="Footer">
-          <Link to="/">Home</Link>
-          <Link to="/projects">Projects</Link>
-          <Link to="/about">About Us</Link>
-          <Link to="/why-us">Why Us</Link>
-          <Link to="/contact">Contact</Link>
+          <Link to="/"><i className="fa-solid fa-house" /> Home</Link>
+          <Link to="/projects"><i className="fa-solid fa-layer-group" /> Projects</Link>
+          <Link to="/about"><i className="fa-solid fa-building-columns" /> About Us</Link>
+          <Link to="/why-us"><i className="fa-solid fa-shield-halved" /> Why Us</Link>
+          <Link to="/contact"><i className="fa-solid fa-headset" /> Contact</Link>
         </nav>
       </div>
+
       <div className="wrap copyright">
-        <p>&copy; {year} Vighnaharta Realty. All rights reserved.</p>
+        <p>
+          <i className="fa-regular fa-copyright" /> {year} Vighnaharta Realty. All rights reserved.
+          &nbsp;·&nbsp;
+          <i className="fa-solid fa-location-dot" /> Mumbai &amp; Navi Mumbai
+        </p>
       </div>
     </footer>
   );
