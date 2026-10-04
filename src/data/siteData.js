@@ -114,11 +114,11 @@ const SITE_DATA = {
       totalPlots: "Limited plots",
       rera: "—", // VERIFY-CLIENT (add RERA no. only if applicable)
       possession: "Registration Open",
-      image: "/images/3 lakh plot.jpeg",
+      image: "/images/3_lakh_plot.jpg",
       images: [
-        "/images/3 lakh plot.jpeg",
-        "/images/home page 1.jpeg",
-        "/images/projects.jpeg"
+        "/images/3_lakh_plot.jpg",
+        "/images/home_page1.jpg",
+        "/images/projects.jpg"
       ],
       overview:
         "These plots sit inside the Mumbai 3.0 belt, the planned region between Mumbai and Navi Mumbai that is being shaped by the Navi Mumbai International Airport, Atal Setu and the Alibaug–Virar corridor. Priced well below saturated city markets, they give first-time investors a realistic way to enter early and hold for long-term appreciation. Each plot comes with a checked 7/12 extract and a clean title trail, and our team walks you through the paperwork from booking to mutation.",
@@ -174,11 +174,11 @@ const SITE_DATA = {
       totalPlots: "Limited plots",
       rera: "—", // VERIFY-CLIENT (add RERA no. only if applicable)
       possession: "Registration Open",
-      image: "/images/6lakh_new.png",
+      image: "/images/6lakh_new.jpg",
       images: [
-        "/images/6lakh_new.png",
-        "/images/home page 1.jpeg",
-        "/images/projects.jpeg"
+        "/images/6lakh_new.jpg",
+        "/images/home_page1.jpg",
+        "/images/projects.jpg"
       ],
       overview:
         "For buyers who prefer land nearer to the big infrastructure lines, this category offers plots positioned along the growth corridors of Mumbai 3.0. The Alibaug–Virar multimodal corridor, the coastal link to Atal Setu and the upcoming metro connection make this stretch a natural pick for medium to long-term investors. As with every Vighnaharta plot, records are checked before we show it, and the deal is documented in writing.",
@@ -234,11 +234,11 @@ const SITE_DATA = {
       totalPlots: "Limited plots",
       rera: "—", // VERIFY-CLIENT (add RERA no. only if applicable)
       possession: "Registration Open",
-      image: "/images/1.5lakh.jpeg",
+      image: "/images/1_5lakh.jpg",
       images: [
-        "/images/1.5lakh.jpeg",
-        "/images/home page 1.jpeg",
-        "/images/projects.jpeg"
+        "/images/1_5lakh.jpg",
+        "/images/home_page1.jpg",
+        "/images/projects.jpg"
       ],
       overview:
         "A high-potential investment opportunity for buyers seeking strategic commercial and investment plots at an accessible entry ticket in the Mumbai 3.0 growth belt. Positioned with seamless connectivity to key infrastructure and transport links, these plots offer strong appreciation potential for business ventures, commercial setups, or long-term capital growth. All title records are 7/12 verified with clear, transparent documentation.",
