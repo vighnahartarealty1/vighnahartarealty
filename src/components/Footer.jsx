@@ -52,6 +52,9 @@ export default function Footer() {
           &nbsp;·&nbsp;
           <i className="fa-solid fa-location-dot" /> Mumbai &amp; Navi Mumbai
         </p>
+        <p className="designer-credit">
+          Designed &amp; Developed with <i className="fa-solid fa-heart" /> by <strong>Elite Digital Studio</strong>
+        </p>
       </div>
     </footer>
   );

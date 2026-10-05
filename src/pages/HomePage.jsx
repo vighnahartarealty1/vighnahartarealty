@@ -10,27 +10,12 @@ import ScrollReveal from '../components/ScrollReveal';
 import { PROPERTIES } from '../data/siteData';
 
 export default function HomePage({ onOpenModal }) {
-  const [searchQuery, setSearchQuery] = useState('');
-  const navigate = useNavigate();
-
-  const handleSearchSubmit = () => {
-    if (searchQuery.trim()) {
-      navigate(`/projects?q=${encodeURIComponent(searchQuery.trim())}`);
-    } else {
-      navigate('/projects');
-    }
-  };
-
   const featured = PROPERTIES.slice(0, 3);
 
   return (
     <div className="page-home">
       {/* 1. HERO with Parallax */}
-      <Hero 
-        searchQuery={searchQuery}
-        setSearchQuery={setSearchQuery}
-        onSearchSubmit={handleSearchSubmit}
-      />
+      <Hero />
 
       {/* 2. STATS & WELCOME INTRO */}
       <StatsIntro />

@@ -28,19 +28,6 @@ export default function PageBanner({
       )}
       {/* Animated background */}
       <div className="pb-gradient-bg" aria-hidden="true">
-        {/* Geometric grid lines */}
-        <svg className="pb-grid" viewBox="0 0 1440 400" preserveAspectRatio="xMidYMid slice" fill="none">
-          <defs>
-            <pattern id="pbGrid" width="80" height="80" patternUnits="userSpaceOnUse">
-              <path d="M 80 0 L 0 0 0 80" fill="none" stroke="rgba(255,255,255,0.04)" strokeWidth="1"/>
-            </pattern>
-          </defs>
-          <rect width="1440" height="400" fill="url(#pbGrid)" />
-          {/* Accent circles */}
-          <circle cx="100" cy="350" r="200" fill={t.accent} fillOpacity="0.06"/>
-          <circle cx="1350" cy="60"  r="250" fill={t.accent} fillOpacity="0.05"/>
-          <circle cx="720"  cy="200" r="120" fill={t.accent} fillOpacity="0.03"/>
-        </svg>
 
         {/* Floating orbs */}
         <div className="pb-orb pb-orb-1" style={{ background: t.accent }} />
@@ -65,17 +52,14 @@ export default function PageBanner({
               ))}
             </nav>
           )}
-
-          {/* Icon badge */}
-          <div className="pb-icon-badge" style={{ '--accent': t.accent }}>
-            <i className={t.icon} />
-          </div>
-
+ 
           {/* Badge pill */}
           {badge && (
             <div className="pb-badge-pill">
-              <i className="fa-solid fa-circle-check" />
-              <span>{badge}</span>
+              <div className="banner-kicker" >
+                <i className="fa-solid fa-circle-check" />
+                <span>{badge}</span>
+              </div>
             </div>
           )}
 

@@ -31,7 +31,7 @@ export default function AboutPage() {
 
   return (
     <div className="page-about">
-      <PageBanner 
+      <PageBanner
         title="Decisions with Clarity. Places with Promise."
         subtitle="We help families, creators, and investors discover verified plots and peaceful sanctuaries with complete trust."
         theme="about"
@@ -71,33 +71,11 @@ export default function AboutPage() {
 
             <ScrollReveal animation="fade-up" delay={120}>
               <div className="story-visual-card">
-                <div className="story-vc-top">
-                  <i className="fa-solid fa-building-columns story-vc-main-icon" />
-                  <p className="story-vc-tagline">Trusted since 2023</p>
-                </div>
-                <div className="story-vc-stats">
-                  <div className="story-vc-stat">
-                    <i className="fa-solid fa-users" />
-                    <strong>500+</strong>
-                    <span>Families Guided</span>
-                  </div>
-                  <div className="story-vc-divider" />
-                  <div className="story-vc-stat">
-                    <i className="fa-solid fa-circle-check" />
-                    <strong>100%</strong>
-                    <span>Title Cleared</span>
-                  </div>
-                  <div className="story-vc-divider" />
-                  <div className="story-vc-stat">
-                    <i className="fa-solid fa-map-location-dot" />
-                    <strong>10+</strong>
-                    <span>Yrs Regional Trust</span>
-                  </div>
-                </div>
-                <div className="story-vc-badge">
-                  <i className="fa-solid fa-shield-halved" />
-                  <span>RERA &amp; Revenue Compliant</span>
-                </div>
+                <img
+                  src={SITE.aboutImage2 || "/images/about_us_2.jpg"}
+                  alt="About Vighnaharta Realty"
+                  className="story-visual-img"
+                />
               </div>
             </ScrollReveal>
           </div>

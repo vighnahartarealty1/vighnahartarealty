@@ -356,6 +356,11 @@ const SITE_DATA = {
         title: "Railway Connectivity",
         image: "/images/mumbai_3_0_railway.jpeg",
         description: "Rail links connect growing residential and commercial areas with established urban centres."
+      },
+      {
+        title: "Navi Mumbai International Airport",
+        image: "/images/Hero_mumbai3_0.jpg",
+        description: "The closest land to a brand-new international airport, putting Panvel and Uran at the centre of MMR's next growth story."
       }
     ],
 

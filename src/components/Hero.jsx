@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { SITE } from '../data/siteData';
 
-export default function Hero({ searchQuery, setSearchQuery, onSearchSubmit }) {
+export default function Hero() {
   const [parallaxOffset, setParallaxOffset] = useState(0);
   const [imageLoaded, setImageLoaded] = useState(false);
 
@@ -21,11 +21,6 @@ export default function Hero({ searchQuery, setSearchQuery, onSearchSubmit }) {
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (onSearchSubmit) onSearchSubmit();
-  };
 
   return (
     <section className="hero" id="home">
@@ -63,34 +58,14 @@ export default function Hero({ searchQuery, setSearchQuery, onSearchSubmit }) {
 
           {/* Main Headline */}
           <h1 className="hero-title hero-anim-2">
-            The best place to find <br />
-            your <em>Inner Peace</em>
+            Find Your Place. Build <br />
+            your <em>Future. </em>
           </h1>
 
           {/* Subtitle */}
           <p className="hero-sub hero-anim-3">
-            Feeling ready to build? Find the best verified location to reconnect with nature, create your sanctuary, and
-            invest with complete clarity.
-          </p>
-
-          {/* Center Floating Pill Search Capsule */}
-          <form className="hero-search-capsule hero-anim-4" onSubmit={handleSubmit} role="search">
-            <div className="search-capsule-input-wrap">
-              <svg className="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                strokeWidth="2">
-                <circle cx="11" cy="11" r="7" />
-                <path d="M20 20l-4-4" />
-              </svg>
-              <input 
-                type="search" 
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Search for a location, plot, or project..." 
-                autoComplete="off" 
-              />
-            </div>
-            <button type="submit" className="capsule-btn">Search Now</button>
-          </form>
+            Premium plots in Mumbai 3.0 for your home, business, or future investment.
+          </p> 
         </div>
 
         {/* Bottom Trust Bar */}
