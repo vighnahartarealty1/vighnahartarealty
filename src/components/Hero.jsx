@@ -48,12 +48,12 @@ export default function Hero() {
           {/* Frosted Pill Badge */}
           <div className="hero-pill-badge hero-anim-1">
             <span className="badge-icon">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
+              {/* <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
                 strokeLinecap="round" strokeLinejoin="round">
                 <path d="m8 3 4 8 5-5 5 15H2L8 3z" />
-              </svg>
+              </svg> */}
             </span>
-            <span>Voted best peaceful plots &amp; land in Maharashtra</span>
+            <span>Recognized as the best investment plots &amp; land in Maharashtra</span>
           </div>
 
           {/* Main Headline */}
@@ -74,8 +74,7 @@ export default function Hero() {
           <div className="trust-badges">
             <div className="trust-brand">100% CLEAR TITLE</div>
             <div className="trust-brand">RERA COMPLIANT</div>
-            <div className="trust-brand">MUMBAI PRIME</div>
-            <div className="trust-brand">500+ FAMILIES</div>
+            <div className="trust-brand">MUMBAI PRIME</div> 
             <div className="trust-brand">INSTANT REGISTRY</div>
           </div>
         </div>

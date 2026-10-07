@@ -47,10 +47,10 @@ export default function AboutPage() {
                 <p className="intro-label">Our Philosophy</p>
                 <h2>Real estate with a long view.</h2>
                 <p className="lead-text">
-                  We believe buying land is more than a monetary transaction—it is the foundation of your family's future, a space for peace, and a legacy that endures.
+                  We believe buying land is more than a monetary transaction it is the foundation of your family's future, a space for peace, and a legacy that endures.
                 </p>
                 <p>
-                  Established in Mumbai, Vighnaharta Realty was founded to bring clarity, honesty, and verified legal confidence to land acquisition. In a market often complicated by opaque documentation, we operate with complete openness, offering thoughtfully vetted residential plots and farm land with immediate registry readiness.
+                  Established in Mumbai, Vighnaharta Realty was founded to bring clarity, honesty, and verified legal confidence to land acquisition. In a market often complicated by opaque documentation, we operate with complete openness, offering thoughtfully vetted investment plots with immediate registry readiness.
                 </p>
                 <div className="story-stats-inline">
                   <div>

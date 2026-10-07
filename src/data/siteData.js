@@ -335,32 +335,32 @@ const SITE_DATA = {
       {
         title: "Metro Connectivity",
         image: "/images/METRO.jpeg",
-        description: "Metro expansion is part of the wider effort to connect communities and key destinations across the region."
+        description: "Fast and easy daily travel with upcoming Metro lines, connecting you smoothly to Navi Mumbai, Thane, and Mumbai without traffic hassle."
       },
       {
         title: "Alibag–Virar Corridor",
         image: "/images/mumbai_3_0_alibag_virar.jpeg",
-        description: "The proposed corridor is intended to strengthen east–west movement across the Mumbai Metropolitan Region."
+        description: "A wide high-speed expressway connecting Virar to Alibag, cutting travel time drastically and making road trips quick across the MMR."
       },
       {
         title: "Atal Setu",
         image: "/images/mumbai_3_0_atal_setu.jpeg",
-        description: "The trans-harbour link provides a direct road connection between South Mumbai and Navi Mumbai."
+        description: "India's longest sea bridge connects South Mumbai to Navi Mumbai in just 20 minutes, making everyday travel quick and effortless."
       },
       {
         title: "JNPT Port",
         image: "/images/mumbai_3_0_jnpt.png",
-        description: "A key logistics and trade hub supporting economic activity across the wider Mumbai region."
+        description: "India's largest container port right next door, bringing strong business growth, logistics hubs, and thousands of jobs to the area."
       },
       {
         title: "Railway Connectivity",
         image: "/images/mumbai_3_0_railway.jpeg",
-        description: "Rail links connect growing residential and commercial areas with established urban centres."
+        description: "Strong local train network and upcoming suburban rail routes, providing affordable and easy daily travel across Mumbai."
       },
       {
         title: "Navi Mumbai International Airport",
         image: "/images/Hero_mumbai3_0.jpg",
-        description: "The closest land to a brand-new international airport, putting Panvel and Uran at the centre of MMR's next growth story."
+        description: "Located close to the brand-new international airport, bringing rapid development, high rental demand, and great property value growth."
       }
     ],
 
