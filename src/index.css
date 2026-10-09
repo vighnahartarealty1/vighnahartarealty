@@ -2766,17 +2766,26 @@ form:hover {
 .site-footer {
   background: linear-gradient(180deg, var(--brown-deep) 0%, #150304 100%);
   color: var(--cream);
-  padding-top: 3.8rem;
+  padding-top: 4.5rem;
+  border-top: 1px solid rgba(228, 209, 205, 0.12);
 }
 
-.site-footer .logo {
-  color: var(--cream);
-  display: inline-flex;
-  align-items: center;
-  gap: 0.75rem;
-  font-size: 1.35rem;
-  font-family: var(--serif);
-  font-weight: 600;
+.footer-inner {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1.6fr;
+  gap: 3.5rem;
+  padding-bottom: 3.8rem;
+  align-items: start;
+}
+
+/* Column 1: Brand Logo Card */
+.footer-col-brand {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: inline-block;
   text-decoration: none;
 }
 
@@ -2784,15 +2793,15 @@ form:hover {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
-  background: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
-  border: 1px solid rgba(221, 167, 65, 0.35);
-  padding: 3px;
+  width: 200px;
+  height: 175px;
+  /* background: #ffffff; */
+  /* border-radius: 20px; */
+  /* box-shadow: 0 10px 32px rgba(0, 0, 0, 0.45), 0 2px 8px rgba(0, 0, 0, 0.2); */
+  /* border: 1px solid rgba(255, 255, 255, 0.9); */
+  padding: 12px 18px;
   flex-shrink: 0;
-  transition: transform 0.3s var(--ease-spring), box-shadow 0.3s ease;
+  /* transition: transform 0.3s var(--ease-spring), box-shadow 0.3s ease; */
 }
 
 .footer-logo-img {
@@ -2803,47 +2812,92 @@ form:hover {
 }
 
 .footer-logo:hover .footer-logo-badge {
-  transform: translateY(-2px) scale(1.06);
-  box-shadow: 0 8px 24px rgba(221, 167, 65, 0.35);
-  border-color: rgba(221, 167, 65, 0.7);
+  transform: translateY(-3px) scale(1.03);
+  /* box-shadow: 0 14px 40px rgba(221, 167, 65, 0.3); */
 }
 
-.site-footer .logo-icon {
-  color: var(--gold-warm);
+.footer-tagline {
+  margin-top: 1.1rem;
+  color: #d4c5b7;
+  font-size: 0.94rem;
+  line-height: 1.6;
+  max-width: 290px;
 }
 
-.site-footer .logo em {
-  color: var(--gold-warm);
+/* Column Headings (COMPANY, REACH US) */
+.footer-col-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--gold-warm, #dda741);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin: 0 0 1.5rem 0;
+  font-family: var(--sans);
 }
 
-.footer-inner {
+/* Column 2: Navigation Links */
+.footer-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
-  justify-content: space-between;
-  gap: 2rem;
-  flex-wrap: wrap;
-  padding-bottom: 2.5rem;
+  flex-direction: column;
+  gap: 0.3.5rem;
 }
 
-.tagline {
-  margin-top: .8rem;
-  color: #e2cec9;
-}
-
-.footer-nav {
-  display: flex;
-  gap: 1.8rem;
-  flex-wrap: wrap;
-  align-items: flex-start;
-}
-
-.footer-nav a {
+.footer-links-list a {
   text-decoration: none;
   color: #e2cec9;
+  font-size: 0.98rem;
+  display: inline-block;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-links-list a:hover {
+  color: #ffffff;
+  transform: translateX(4px);
+}
+
+/* Column 3: Reach Us List */
+.footer-reach-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.footer-reach-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.reach-icon {
+  color: var(--gold-warm, #dda741);
+  font-size: 1.15rem;
+  margin-top: 3px;
+  flex-shrink: 0;
+  width: 20px;
+  text-align: center;
+}
+
+.reach-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  color: #e2cec9;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  max-width: 350px;
+}
+
+.reach-text a {
+  color: #e2cec9;
+  text-decoration: none;
   transition: color 0.2s ease;
 }
 
-.footer-nav a:hover {
-  color: var(--gold-warm);
+.reach-text a:hover {
+  color: #ffffff;
 }
 
 .copyright {
@@ -2891,7 +2945,27 @@ form:hover {
   }
 }
 
+@media (max-width: 900px) {
+  .footer-inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+  .footer-col-contact {
+    grid-column: 1 / -1;
+  }
+}
+
 @media (max-width: 640px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 2.2rem;
+  }
+
+  .footer-logo-badge {
+    width: 160px;
+    height: 100px;
+  }
+
   .copyright {
     flex-direction: column;
     text-align: center;
