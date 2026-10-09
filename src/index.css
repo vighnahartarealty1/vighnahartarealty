@@ -1073,14 +1073,15 @@ p {
 .page-banner {
   position: relative;
   width: 100%;
-  min-height: 420px;
+  min-height: 380px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   background: #180405;
-  padding-top: calc(var(--header-h) + 2rem);
-  padding-bottom: 4rem;
+  margin-top: var(--header-h);
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
 }
 
 .banner-bg-wrapper {
@@ -1554,7 +1555,7 @@ p {
   margin-bottom: 0;
 }
 
-.card-type {
+/* .card-type {
   display: inline-flex;
   width: fit-content;
   align-items: center;
@@ -1569,7 +1570,7 @@ p {
   border-radius: 999px;
   margin-bottom: .7rem;
   transition: background 0.25s ease, color 0.25s ease, transform 0.25s var(--ease-spring);
-}
+} */
 
 .card:hover .card-type {
   background: rgba(165, 111, 75, 0.22);
@@ -3469,7 +3470,8 @@ body.no-scroll {
     margin-bottom: 1.8rem;
     max-width: 95%;
     font-weight: 400;
-    color: #dda741;
+    color: #ffffff;
+    text-shadow: 0 2px 14px rgba(0, 0, 0, 0.75), 0 1px 3px rgba(0, 0, 0, 0.85);
   }
 
   .hero-search-capsule {
@@ -3511,9 +3513,10 @@ body.no-scroll {
 
   /* Page Banners on Mobile */
   .page-banner {
-    min-height: 320px;
-    padding-top: calc(var(--header-h) + 1.2rem);
-    padding-bottom: 2.2rem;
+    min-height: 280px;
+    margin-top: var(--header-h);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .banner-bg-img {
@@ -5338,7 +5341,8 @@ body.no-scroll {
   align-items: center;
   overflow: hidden;
   background: linear-gradient(135deg, #0d0d12 0%, #151520 50%, #0d0d12 100%);
-  padding: 5rem 0 3.5rem;
+  margin-top: var(--header-h);
+  padding: 3.5rem 0;
 }
 
 .pb-image-wrap {
@@ -5487,8 +5491,8 @@ body.no-scroll {
 
 @media (max-width: 600px) {
   .page-banner--icon {
-    min-height: 300px;
-    padding: 4.5rem 0 2.5rem;
+    min-height: 280px;
+    padding: 2rem 0;
   }
   .pb-icon-badge {
     width: 56px;

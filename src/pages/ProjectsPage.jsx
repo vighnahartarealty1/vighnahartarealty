@@ -18,12 +18,6 @@ export default function ProjectsPage({ onOpenModal }) {
       {/* Catalog Section */}
       <section className="section" id="projects-catalog">
         <div className="wrap">
-          <ScrollReveal animation="fade-up">
-            <p className="count" aria-live="polite">
-              Showing all <strong>{PROPERTIES.length}</strong> verified listings
-            </p>
-          </ScrollReveal>
-
           {/* Cards Grid */}
           <div className="grid">
             {PROPERTIES.map((property, idx) => (

@@ -102,7 +102,7 @@ const SITE_DATA = {
       id: "mumbai-3-entry-plots",
       name: "Mumbai 3.0 Entry Plots",
       tagline: "An early, affordable way into Mumbai's next growth belt",
-      type: "Investment Plots",
+      // type: "Investment Plots",
       status: "Available",
       featured: true,
       city: "Panvel",
@@ -133,7 +133,7 @@ const SITE_DATA = {
         "Registration and mutation support from our team"
       ],
       plotDetails: [
-        { label: "Project Type",   value: "Investment Plots" },
+        // { label: "Project Type",   value: "Investment Plots" },
         { label: "Region",         value: "Mumbai 3.0 (Uran – Panvel – Pen)" },
         { label: "Unit",           value: "1 Guntha = 1,089 sq.ft" },
         { label: "Starting Price", value: "₹ 3 Lakh per Guntha" },
@@ -162,7 +162,7 @@ const SITE_DATA = {
       id: "mumbai-3-premium-plots",
       name: "Mumbai 3.0 Premium Corridor Plots",
       tagline: "Plots closer to the action for buyers who want stronger positioning",
-      type: "Investment Plots",
+      // type: "Investment Plots",
       status: "Available",
       featured: true,
       city: "Alibaug",
@@ -193,7 +193,7 @@ const SITE_DATA = {
         "Support through sale deed and mutation"
       ],
       plotDetails: [
-        { label: "Project Type",   value: "Investment Plots" },
+        // { label: "Project Type",   value: "Investment Plots" },
         { label: "Region",         value: "Mumbai 3.0 Belt" },
         { label: "Unit",           value: "1 Guntha = 1,089 sq.ft" },
         { label: "Starting Price", value: "₹ 6 Lakh per Guntha" },
@@ -222,7 +222,7 @@ const SITE_DATA = {
       id: "mumbai-3-commercial-investment-plots",
       name: "Mumbai 3.0 Commercial Investment Plots",
       tagline: "Strategic commercial and investment plots in the emerging Mumbai 3.0 corridor",
-      type: "Commercial Investment Plots",
+      // type: "Commercial Investment Plots",
       status: "Available",
       featured: false,
       city: "Mumbai 3.0",
@@ -253,7 +253,7 @@ const SITE_DATA = {
         "Full documentation guidance till mutation"
       ],
       plotDetails: [
-        { label: "Project Type",   value: "Commercial Investment Plots" },
+        // { label: "Project Type",   value: "Commercial Investment Plots" },
         { label: "Location",       value: "Mumbai 3.0 Belt" },
         { label: "Unit",           value: "1 Guntha = 1,089 sq.ft" },
         { label: "Starting Price", value: "₹ 1.5 Lakh per Guntha" },
@@ -280,8 +280,8 @@ const SITE_DATA = {
   /* Project Categories for filter pills */
   categories: [
     "All",
-    "Investment Plots",
-    "Commercial Investment Plots"
+    // "Investment Plots",
+    // "Commercial Investment Plots"
   ],
 
   /* =====================================================================
@@ -304,7 +304,7 @@ const SITE_DATA = {
      ===================================================================== */
   mumbai3: {
     images: {
-      heroBg: "/images/Hero_mumbai3_0.jpg",
+      heroBg: "/images/mumbai_3_0_airport.jpg",
       ctaBg: "",  // e.g. "/images/cta-bg.jpg"
       overview: "/images/mumbai_3_0_1.jpeg",
       property1: "", // Highway-Connected Logistics & Commercial Plot
@@ -373,15 +373,15 @@ const SITE_DATA = {
       ]
     },
 
-    categories: [
-      "All Categories",
-      "Highway-Connected Corridors",
-      "Residential Plots",
-      "Township Developments",
-      "Commercial Land",
-      "Future Development Zones",
-      "Residential Investment Opportunities"
-    ],
+    // categories: [
+    //   "All Categories",
+    //   "Highway-Connected Corridors",
+    //   "Residential Plots",
+    //   "Township Developments",
+    //   "Commercial Land",
+    //   "Future Development Zones",
+    //   "Residential Investment Opportunities"
+    // ],
 
     properties: [
       {
