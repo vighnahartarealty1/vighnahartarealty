@@ -57,7 +57,7 @@ export default function HomePage({ onOpenModal }) {
       <VisionSteps />
 
       {/* 5. WHY CHOOSE US / TIMELINE */}
-      <TimelineSection />
+      {/* <TimelineSection /> */}
 
       {/* 6. CONTACT & ENQUIRY */}
       <ContactSection />

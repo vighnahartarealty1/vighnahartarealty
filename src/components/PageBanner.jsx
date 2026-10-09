@@ -1,13 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-const PAGE_THEMES = {
-  about:    { icon: 'fa-solid fa-building-columns', accent: '#c9a96e' },
-  projects: { icon: 'fa-solid fa-layer-group',      accent: '#7eb8f7' },
-  whyus:    { icon: 'fa-solid fa-shield-halved',    accent: '#82e0aa' },
-  contact:  { icon: 'fa-solid fa-headset',          accent: '#c39bd3' },
-  default:  { icon: 'fa-solid fa-location-dot',     accent: '#c9a96e' },
-};
+import ScrollReveal from './ScrollReveal';
 
 export default function PageBanner({ 
   title, 
@@ -17,32 +10,33 @@ export default function PageBanner({
   badge,
   breadcrumbs = []
 }) {
-  const t = PAGE_THEMES[theme] || PAGE_THEMES.default;
-
   return (
-    <section className={`page-banner page-banner--icon ${image ? 'has-image' : ''}`}>
-      {image && (
-        <div className="pb-image-wrap" aria-hidden="true">
-          <img className="pb-image" src={image} alt="" />
-        </div>
-      )}
-      {/* Animated background */}
-      <div className="pb-gradient-bg" aria-hidden="true">
-
-        {/* Floating orbs */}
-        <div className="pb-orb pb-orb-1" style={{ background: t.accent }} />
-        <div className="pb-orb pb-orb-2" style={{ background: t.accent }} />
+    <section className="m3-hero-section page-banner" id="page-banner">
+      <div className="m3-hero-backdrop">
+        {image ? (
+          <img 
+            src={image} 
+            alt={typeof title === 'string' ? title : 'Page Banner'} 
+            className="m3-hero-bg-img" 
+          />
+        ) : (
+          <div className="m3-hero-gradient-canvas">
+            <div className="m3-hero-ambient-orb orb-1"></div>
+            <div className="m3-hero-ambient-orb orb-2"></div>
+            <div className="m3-hero-grid-overlay"></div>
+          </div>
+        )}
+        <div className="m3-hero-overlay"></div>
       </div>
 
-      <div className="wrap banner-content">
-        <div className="banner-inner">
-          {/* Breadcrumbs */}
+      <div className="wrap m3-hero-wrap">
+        <div className="m3-hero-content">
           {breadcrumbs.length > 0 && (
             <nav className="banner-breadcrumbs" aria-label="Breadcrumb">
-              <Link to="/"><i className="fa-solid fa-house" style={{fontSize:'11px'}}/> Home</Link>
+              <Link to="/"><i className="fa-solid fa-house" style={{ fontSize: '11px' }} /> Home</Link>
               {breadcrumbs.map((crumb) => (
                 <React.Fragment key={crumb.label}>
-                  <span className="crumb-sep"><i className="fa-solid fa-chevron-right"/></span>
+                  <span className="crumb-sep"><i className="fa-solid fa-chevron-right" /></span>
                   {crumb.to ? (
                     <Link to={crumb.to}>{crumb.label}</Link>
                   ) : (
@@ -52,24 +46,25 @@ export default function PageBanner({
               ))}
             </nav>
           )}
- 
-          {/* Badge pill */}
+
           {badge && (
-            <div className="pb-badge-pill">
-              <div className="banner-kicker" >
-                <i className="fa-solid fa-circle-check" />
-                <span>{badge}</span>
+            <ScrollReveal animation="fade-up">
+              <div className="m3-hero-badge">
+                <span className="m3-badge-pulse"></span>
+                <span className="m3-badge-text">{badge}</span>
               </div>
-            </div>
+            </ScrollReveal>
           )}
 
-          <h1 className="banner-title">{title}</h1>
+          <ScrollReveal animation="fade-up" delay={100}>
+            <h1 className="m3-hero-title banner-title">{title}</h1>
+          </ScrollReveal>
 
           {subtitle && (
-            <p className="banner-subtitle">{subtitle}</p>
+            <ScrollReveal animation="fade-up" delay={200}>
+              <p className="m3-hero-subtitle banner-subtitle">{subtitle}</p>
+            </ScrollReveal>
           )}
-
- 
         </div>
       </div>
     </section>

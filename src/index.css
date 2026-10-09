@@ -684,8 +684,9 @@ p {
 .hero {
   position: relative;
   width: 100%;
-  min-height: 100vh;
-  min-height: 100svh;
+  min-height: calc(100vh - var(--header-h));
+  min-height: calc(100svh - var(--header-h));
+  margin-top: var(--header-h);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -758,14 +759,14 @@ p {
 .hero-content {
   position: relative;
   z-index: 3;
-  padding-top: calc(var(--header-h) + 2.2rem);
+  padding-top: 2rem;
   padding-bottom: 2.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  min-height: 100vh;
-  min-height: 100svh;
+  min-height: calc(100vh - var(--header-h));
+  min-height: calc(100svh - var(--header-h));
   box-sizing: border-box;
   text-align: center;
 }
@@ -1071,17 +1072,17 @@ p {
 
 /* ---------- Multi-Page Parallax Page Banner ---------- */
 .page-banner {
-  position: relative;
-  width: 100%;
-  min-height: 380px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  background: #180405;
-  margin-top: var(--header-h);
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
+position: relative;
+min-height: calc(85vh - var(--header-h));
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: var(--header-h);
+padding: 3.5rem 0 4.5rem;
+background-color: var(--brown-deep);
+color: #ffffff;
+overflow: hidden;
+
 }
 
 .banner-bg-wrapper {
@@ -1098,10 +1099,10 @@ p {
 
 .banner-bg-img {
   position: absolute;
-  top: -40px;
+  top: 0;
   left: 0;
   width: 100%;
-  height: calc(100% + 80px);
+  height: 100%;
   min-width: 100%;
   min-height: 100%;
   max-width: none !important;
@@ -1915,13 +1916,14 @@ p {
 }
 
 .tl-body h3 {
-  font-size: 1.35rem;
+  font-size: 1.78rem;
   margin-bottom: .35rem;
 }
 
 .tl-body p {
   color: var(--brown-soft);
   max-width: 56ch;
+  font-size: 1rem;
 }
 
 .timeline-cta {
@@ -3420,8 +3422,9 @@ body.no-scroll {
 
   /* Hero Section Mobile */
   .hero {
-    min-height: 100vh;
-    min-height: 100svh;
+    min-height: calc(100vh - var(--header-h));
+    min-height: calc(100svh - var(--header-h));
+    margin-top: var(--header-h);
   }
 
   .hero-bg-wrapper,
@@ -3448,7 +3451,9 @@ body.no-scroll {
   }
 
   .hero-content {
-    padding-top: calc(var(--header-h) + 1.2rem);
+    min-height: calc(100vh - var(--header-h));
+    min-height: calc(100svh - var(--header-h));
+    padding-top: 1.5rem;
     padding-bottom: 2rem;
   }
 
@@ -4032,11 +4037,12 @@ body.no-scroll {
    ------------------------------------------------------------------------- */
 .m3-hero-section {
   position: relative;
-  min-height: 85vh;
+  min-height: calc(85vh - var(--header-h));
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: calc(var(--header-h) + 3.5rem) 0 4.5rem;
+  margin-top: var(--header-h);
+  padding: 3.5rem 0 4.5rem;
   background-color: var(--brown-deep);
   color: #ffffff;
   overflow: hidden;
@@ -4165,13 +4171,12 @@ body.no-scroll {
 }
 
 .m3-hero-title {
-  font-family: var(--sans);
-  font-size: clamp(2.3rem, 5vw, 4rem);
-  font-weight: 700;
-  line-height: 1.14;
-  letter-spacing: -0.03em;
+  font-size: clamp(2.4rem, 5vw, 3.8rem);
+  font-weight: 600;
   color: #ffffff;
-  margin-bottom: 1.25rem;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.1rem;
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
 }
 
 .m3-gold-gradient-text {
@@ -4182,12 +4187,11 @@ body.no-scroll {
 }
 
 .m3-hero-subtitle {
-  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
-  line-height: 1.7;
-  color: rgba(251, 248, 244, 0.88);
-  max-width: 740px;
-  margin-bottom: 2.25rem;
-  font-weight: 400;
+  font-size: clamp(1.05rem, 1.8vw, 1.22rem);
+  line-height: 1.6;
+  color: #eeddcc;
+  max-width: 650px;
+  margin: 0 auto;
 }
 
 .m3-hero-actions {
@@ -5235,7 +5239,8 @@ body.no-scroll {
   }
 
   .m3-hero-section {
-    padding: calc(var(--header-h) + 2rem) 0 3.5rem;
+    margin-top: var(--header-h);
+    padding: 2.5rem 0 3.5rem;
     min-height: auto;
   }
 
@@ -5336,7 +5341,7 @@ body.no-scroll {
    ========================================================================== */
 .page-banner--icon {
   position: relative;
-  min-height: 360px;
+  min-height: 500px;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -5347,7 +5352,7 @@ body.no-scroll {
 
 .pb-image-wrap {
   position: absolute;
-  inset: 0;
+
   z-index: 0;
   overflow: hidden;
 }
@@ -5356,7 +5361,7 @@ body.no-scroll {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+object-position: center;
 }
 
 .page-banner--icon.has-image .pb-gradient-bg {
@@ -5458,7 +5463,14 @@ body.no-scroll {
   font-size: 0.75rem;
 }
 
-
+/* Accent bottom line */
+/* .pb-accent-line {
+  height: 2px;
+  width: 80px;
+  border-radius: 2px;
+  margin-top: 1.5rem;
+  opacity: 0.6;
+} */
 
 /* Adjust existing .banner-title / .banner-subtitle for new banner */
 .page-banner--icon .banner-title {

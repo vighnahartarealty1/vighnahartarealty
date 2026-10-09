@@ -52,20 +52,7 @@ export default function AboutPage() {
                 <p>
                   Established in Mumbai, Vighnaharta Realty was founded to bring clarity, honesty, and verified legal confidence to land acquisition. In a market often complicated by opaque documentation, we operate with complete openness, offering thoughtfully vetted investment plots with immediate registry readiness.
                 </p>
-                <div className="story-stats-inline">
-                  <div>
-                    <strong>500+</strong>
-                    <span>Families Guided</span>
-                  </div>
-                  <div>
-                    <strong>10+</strong>
-                    <span>Years Regional Trust</span>
-                  </div>
-                  <div>
-                    <strong>100%</strong>
-                    <span>RERA &amp; Title Cleared</span>
-                  </div>
-                </div>
+              
               </div>
             </ScrollReveal>
 

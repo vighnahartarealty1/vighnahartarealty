@@ -53,10 +53,7 @@ export default function Mumbai3Page({ onOpenModal }) {
         <div className="wrap m3-hero-wrap">
           <div className="m3-hero-content">
             <ScrollReveal animation="fade-up">
-              <div className="m3-hero-badge">
-                <span className="m3-badge-pulse"></span>
-                <span className="m3-badge-text">Metropolitan Growth Belt · Mumbai 3.0</span>
-              </div>
+               
             </ScrollReveal>
 
             <ScrollReveal animation="fade-up" delay={100}>

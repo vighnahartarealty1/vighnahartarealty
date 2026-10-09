@@ -107,7 +107,7 @@ const SITE_DATA = {
       featured: true,
       city: "Panvel",
       location: "Uran – Panvel – Pen Belt, Mumbai 3.0",
-      priceFrom: "₹ 3 Lakh*",
+      priceFrom: "₹ 3.50 Lakh*",
       priceNote: "Per Guntha (1,089 sq.ft), starting price",
       plotSizes: ["1 Guntha – 1,089 sq.ft", "Multiple Gunthas on request"],
       area: "Contact for details",
@@ -167,7 +167,7 @@ const SITE_DATA = {
       featured: true,
       city: "Alibaug",
       location: "Mumbai 3.0 Belt — Alibaug–Virar Corridor side",
-      priceFrom: "₹ 6 Lakh*",
+      priceFrom: "₹ 5 Lakh*",
       priceNote: "Per Guntha (1,089 sq.ft), starting price",
       plotSizes: ["1 Guntha – 1,089 sq.ft", "Multiple Gunthas on request"],
       area: "Contact for details",
@@ -227,7 +227,7 @@ const SITE_DATA = {
       featured: false,
       city: "Mumbai 3.0",
       location: "Mumbai 3.0 Belt, Raigad",
-      priceFrom: "₹ 1.5 Lakh*",
+      priceFrom: "₹ 4 Lakh*",
       priceNote: "Per Guntha (1,089 sq.ft), starting price",
       plotSizes: ["1 Guntha – 1,089 sq.ft", "Multiple Gunthas on request"],
       area: "Contact for details",
@@ -590,7 +590,7 @@ const SITE_DATA = {
 
     stats: [
       {
-        value: "6+",
+        value: "3",
         label: "Property Categories",
         sub: "Plots, Commercial, Townships & Corridors"
       },

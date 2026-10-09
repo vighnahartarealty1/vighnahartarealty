@@ -13,19 +13,9 @@ export default function WhyUsPage() {
       icon: "fa-solid fa-scale-balanced"
     },
     {
-      title: "RERA & Revenue Compliant",
-      desc: "Full adherence to town planning, NA (Non-Agricultural) sanctions, and local municipal zoning norms.",
-      icon: "fa-solid fa-file-contract"
-    },
-    {
       title: "Direct Owner Registry",
       desc: "Instant registration directly in your name with zero middlemen ambiguity and genuine government stamp duty assistance.",
       icon: "fa-solid fa-pen-to-square"
-    },
-    {
-      title: "Infrastructure Ready",
-      desc: "Internal roads, boundary demarcation, water access, and electricity lines ready for prompt home construction.",
-      icon: "fa-solid fa-road"
     },
     {
       title: "High Growth Corridors",
@@ -42,7 +32,7 @@ export default function WhyUsPage() {
   return (
     <div className="page-why-us">
       <PageBanner 
-        badge="Trust & Verification"
+         
         title="Why Choose Vighnaharta Realty"
         subtitle="The small details matter when you are choosing land for a very big future. Discover our proven standard of trust."
         theme="whyus"

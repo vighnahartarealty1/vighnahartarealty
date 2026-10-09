@@ -28,8 +28,8 @@ export default function Hero() {
 
           {/* Main Headline */}
           <h1 className="hero-title hero-anim-2">
-            Find Your Place. Build <br />
-            your <em>Future. </em>
+            we don't just sell <br/> 
+            we help you to buy plots.
           </h1>
 
           {/* Subtitle */}
