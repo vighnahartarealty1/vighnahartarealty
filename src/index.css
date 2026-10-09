@@ -2252,12 +2252,23 @@ overflow: hidden;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+  align-items: stretch;
+}
+
+.ct-cards-row > * {
+  display: flex;
+  height: 100%;
+  width: 100%;
 }
 
 .ct-info-card {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
   text-align: center;
   padding: 2.2rem 1.6rem 2rem;
   background: #ffffff;
@@ -2842,7 +2853,7 @@ form:hover {
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 0.3.5rem;
+  gap: 0.35rem;
 }
 
 .footer-links-list a {
