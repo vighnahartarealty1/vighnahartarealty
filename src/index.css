@@ -846,7 +846,7 @@ p {
   letter-spacing: -0.025em;
   color: #ffffff;
   margin-bottom: 1.4rem;
-  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.7), 0 1px 4px rgba(0, 0, 0, 0.9);
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.2), 0 1px 4px rgba(0, 0, 0, 0.4);
 }
 
 .hero-title em {
@@ -872,7 +872,7 @@ p {
   max-width: 620px;
   margin-bottom: 2.5rem;
   font-weight: 500;
-  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.75), 0 1px 3px rgba(0, 0, 0, 0.85);
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 /* Center Floating Pill Search Capsule */
@@ -4050,7 +4050,7 @@ body.no-scroll {
 
 .m3-hero-backdrop {
   position: absolute;
-  inset: 0;
+  inset: 1;
   z-index: 1;
   pointer-events: none;
 }
@@ -4115,12 +4115,12 @@ body.no-scroll {
 .m3-hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(22, 15, 10, 0.55) 0%,
-    rgba(22, 15, 10, 0.8) 60%,
-    rgba(22, 15, 10, 0.96) 100%
-  );
+background: linear-gradient(
+  180deg,
+  rgba(22, 15, 10, 0.25) 0%,
+  rgba(22, 15, 10, 0.45) 60%,
+  rgba(22, 15, 10, 0.65) 100%
+);
 }
 
 .m3-hero-wrap {
