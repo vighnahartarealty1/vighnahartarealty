@@ -306,7 +306,7 @@ p {
   border-bottom-color: rgba(228, 209, 205, 0.9);
 }
 
-.scroll-progress {
+/* .scroll-progress {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -315,7 +315,7 @@ p {
   background: linear-gradient(90deg, var(--clay) 0%, var(--gold-warm) 60%, var(--wa) 100%);
   z-index: 10;
   transition: width 0.08s linear;
-}
+} */
 
 .header-container {
   width: 100%;
@@ -5458,14 +5458,7 @@ body.no-scroll {
   font-size: 0.75rem;
 }
 
-/* Accent bottom line */
-.pb-accent-line {
-  height: 2px;
-  width: 80px;
-  border-radius: 2px;
-  margin-top: 1.5rem;
-  opacity: 0.6;
-}
+
 
 /* Adjust existing .banner-title / .banner-subtitle for new banner */
 .page-banner--icon .banner-title {

@@ -69,8 +69,7 @@ export default function PageBanner({
             <p className="banner-subtitle">{subtitle}</p>
           )}
 
-          {/* Decorative line */}
-          <div className="pb-accent-line" style={{ background: `linear-gradient(90deg, ${t.accent}, transparent)` }} />
+ 
         </div>
       </div>
     </section>

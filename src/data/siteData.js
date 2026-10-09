@@ -43,32 +43,32 @@ const SITE_DATA = {
 
     /* Our Values */
     values: [
-      { icon: "fa-solid fa-handshake",       title: "Honesty First",             text: "Straight answers about the land, the price and the process. If something is not right for you, we will say so." },
-      { icon: "fa-solid fa-file-lines",      title: "Paperwork Before Promises",  text: "We let documents do the talking. Nothing is offered until the records have been checked." },
-      { icon: "fa-solid fa-comments",        title: "Open Communication",         text: "Titles, records and terms are shared with you before you book, so you never decide in the dark." },
-      { icon: "fa-solid fa-person-walking",  title: "No-Pressure Buying",        text: "You visit, you compare, you decide. We never use urgency tactics to close a deal." },
-      { icon: "fa-solid fa-chart-line",      title: "Growth-Minded Locations",    text: "We pick land near real infrastructure — airport, sea link, highways and rail — where long-term demand is being built." },
-      { icon: "fa-solid fa-shield-halved",   title: "Long-Term Support",          text: "Our job doesn't end at the sale deed. We stay available for mutation and any questions afterwards." }
+      { icon: "fa-solid fa-handshake", title: "Honesty First", text: "Straight answers about the land, the price and the process. If something is not right for you, we will say so." },
+      { icon: "fa-solid fa-file-lines", title: "Paperwork Before Promises", text: "We let documents do the talking. Nothing is offered until the records have been checked." },
+      { icon: "fa-solid fa-comments", title: "Open Communication", text: "Titles, records and terms are shared with you before you book, so you never decide in the dark." },
+      { icon: "fa-solid fa-person-walking", title: "No-Pressure Buying", text: "You visit, you compare, you decide. We never use urgency tactics to close a deal." },
+      { icon: "fa-solid fa-chart-line", title: "Growth-Minded Locations", text: "We pick land near real infrastructure — airport, sea link, highways and rail — where long-term demand is being built." },
+      { icon: "fa-solid fa-shield-halved", title: "Long-Term Support", text: "Our job doesn't end at the sale deed. We stay available for mutation and any questions afterwards." }
     ],
 
     /* Why Choose Us */
     whyChooseUs: [
-      { icon: "fa-solid fa-circle-check",     title: "Verified 7/12 Records",       text: "Every plot's 7/12 extract is reviewed in detail — owner, survey number, area and any encumbrance." },
-      { icon: "fa-solid fa-link",             title: "Clean Title Chain",            text: "We cross-check the 8A record and follow the title trail so there are no surprises later." },
-      { icon: "fa-solid fa-location-dot",     title: "Inside the Mumbai 3.0 Belt",   text: "Plots placed in the Uran–Panvel–Pen region, close to NMIA, Atal Setu and JNPT." },
-      { icon: "fa-solid fa-binoculars",       title: "Site Visits, Not Just Photos", text: "Walk the land, check the access road and boundary, and see the surroundings before you commit." },
-      { icon: "fa-solid fa-file-signature",   title: "Clear Written Agreement",      text: "Plot details, agreed price and registration timeline are put in writing at the time of booking." },
-      { icon: "fa-solid fa-building-columns", title: "Registration Support",         text: "We coordinate the sale deed, stamp duty guidance and sub-registrar formalities so you don't chase papers." },
-      { icon: "fa-solid fa-stamp",            title: "Mutation Handled for You",     text: "We help file the 7/12 mutation at the Talathi office so your name reaches the land record." },
-      { icon: "fa-solid fa-headset",          title: "Free Consultation",            text: "Talk to our team about budget, location and goals with zero obligation." }
+      { icon: "fa-solid fa-circle-check", title: "Verified 7/12 Records", text: "Every plot's 7/12 extract is reviewed in detail — owner, survey number, area and any encumbrance." },
+      { icon: "fa-solid fa-link", title: "Clean Title Chain", text: "We cross-check the 8A record and follow the title trail so there are no surprises later." },
+      { icon: "fa-solid fa-location-dot", title: "Inside the Mumbai 3.0 Belt", text: "Plots placed in the Uran–Panvel–Pen region, close to NMIA, Atal Setu and JNPT." },
+      { icon: "fa-solid fa-binoculars", title: "Site Visits, Not Just Photos", text: "Walk the land, check the access road and boundary, and see the surroundings before you commit." },
+      { icon: "fa-solid fa-file-signature", title: "Clear Written Agreement", text: "Plot details, agreed price and registration timeline are put in writing at the time of booking." },
+      { icon: "fa-solid fa-building-columns", title: "Registration Support", text: "We coordinate the sale deed, stamp duty guidance and sub-registrar formalities so you don't chase papers." },
+      { icon: "fa-solid fa-stamp", title: "Mutation Handled for You", text: "We help file the 7/12 mutation at the Talathi office so your name reaches the land record." },
+      { icon: "fa-solid fa-headset", title: "Free Consultation", text: "Talk to our team about budget, location and goals with zero obligation." }
     ],
 
     /* Home page stats */
     stats: [
-      { value: "124+",  label: "Villages in the Mumbai 3.0 Belt" },
-      { value: "6",     label: "Major Infra Projects Nearby" },
-      { value: "100%",  label: "Verified 7/12 Titles" },
-      { value: "Free",  label: "Site Visit & Consultation" }
+      { value: "124+", label: "Villages in the Mumbai 3.0 Belt" },
+      { value: "6", label: "Major Infra Projects Nearby" },
+      { value: "100%", label: "Verified 7/12 Titles" },
+      { value: "Free", label: "Site Visit & Consultation" }
     ],
 
     /* Contact details */
@@ -84,10 +84,10 @@ const SITE_DATA = {
     },
 
     social: [
-      { label: "FB", name: "Facebook",  url: "https://facebook.com" },
+      { label: "FB", name: "Facebook", url: "https://facebook.com" },
       { label: "IG", name: "Instagram", url: "https://instagram.com" },
-      { label: "YT", name: "YouTube",   url: "https://youtube.com" },
-      { label: "IN", name: "LinkedIn",  url: "https://linkedin.com" }
+      { label: "YT", name: "YouTube", url: "https://youtube.com" },
+      { label: "IN", name: "LinkedIn", url: "https://linkedin.com" }
     ]
   },
 
@@ -134,24 +134,24 @@ const SITE_DATA = {
       ],
       plotDetails: [
         // { label: "Project Type",   value: "Investment Plots" },
-        { label: "Region",         value: "Mumbai 3.0 (Uran – Panvel – Pen)" },
-        { label: "Unit",           value: "1 Guntha = 1,089 sq.ft" },
+        { label: "Region", value: "Mumbai 3.0 (Uran – Panvel – Pen)" },
+        { label: "Unit", value: "1 Guntha = 1,089 sq.ft" },
         { label: "Starting Price", value: "₹ 3 Lakh per Guntha" },
-        { label: "Title",          value: "7/12 Verified, Clear Title" },
-        { label: "Booking",        value: "Token amount + written agreement" },
-        { label: "Registration",   value: "Sale Deed with our assistance" },
-        { label: "Mutation",       value: "7/12 mutation support" },
-        { label: "Site Visit",     value: "Arranged on request" },
-        { label: "Availability",   value: "Registration Open" }
+        { label: "Title", value: "7/12 Verified, Clear Title" },
+        { label: "Booking", value: "Token amount + written agreement" },
+        { label: "Registration", value: "Sale Deed with our assistance" },
+        { label: "Mutation", value: "7/12 mutation support" },
+        { label: "Site Visit", value: "Arranged on request" },
+        { label: "Availability", value: "Registration Open" }
       ],
       connectivity: [
-        { place: "NH-4B Highway",                     distance: "~4 min drive" },
-        { place: "Panvel Railway Station",            distance: "~6 min drive" },
-        { place: "JNPT Port",                         distance: "~18 min drive" },
-        { place: "Navi Mumbai Int'l Airport (NMIA)",  distance: "~22 min drive" },
-        { place: "Atal Setu (MTHL)",                  distance: "~15 min to S. Mumbai" },
-        { place: "Alibaug–Virar Corridor",            distance: "126 km, under construction" },
-        { place: "Panvel–Khopoli Expressway",         distance: "Nearby" }
+        { place: "NH-4B Highway", distance: "~4 min drive" },
+        { place: "Panvel Railway Station", distance: "~6 min drive" },
+        { place: "JNPT Port", distance: "~18 min drive" },
+        { place: "Navi Mumbai Int'l Airport (NMIA)", distance: "~22 min drive" },
+        { place: "Atal Setu (MTHL)", distance: "~15 min to S. Mumbai" },
+        { place: "Alibaug–Virar Corridor", distance: "126 km, under construction" },
+        { place: "Panvel–Khopoli Expressway", distance: "Nearby" }
       ],
       mapEmbed:
         "https://www.google.com/maps?q=Panvel%2C%20Maharashtra&output=embed"
@@ -194,24 +194,24 @@ const SITE_DATA = {
       ],
       plotDetails: [
         // { label: "Project Type",   value: "Investment Plots" },
-        { label: "Region",         value: "Mumbai 3.0 Belt" },
-        { label: "Unit",           value: "1 Guntha = 1,089 sq.ft" },
+        { label: "Region", value: "Mumbai 3.0 Belt" },
+        { label: "Unit", value: "1 Guntha = 1,089 sq.ft" },
         { label: "Starting Price", value: "₹ 6 Lakh per Guntha" },
-        { label: "Title",          value: "7/12 Verified, Clear Title" },
-        { label: "Booking",        value: "Token amount + written agreement" },
-        { label: "Registration",   value: "Sale Deed with our assistance" },
-        { label: "Mutation",       value: "7/12 mutation support" },
-        { label: "Site Visit",     value: "Arranged on request" },
-        { label: "Availability",   value: "Registration Open" }
+        { label: "Title", value: "7/12 Verified, Clear Title" },
+        { label: "Booking", value: "Token amount + written agreement" },
+        { label: "Registration", value: "Sale Deed with our assistance" },
+        { label: "Mutation", value: "7/12 mutation support" },
+        { label: "Site Visit", value: "Arranged on request" },
+        { label: "Availability", value: "Registration Open" }
       ],
       connectivity: [
-        { place: "Alibaug–Virar Corridor",            distance: "126 km, under construction" },
-        { place: "Atal Setu (MTHL)",                  distance: "~15 min to S. Mumbai" },
-        { place: "Navi Mumbai Int'l Airport (NMIA)",  distance: "~22 min drive" },
-        { place: "JNPT Port",                         distance: "~18 min drive" },
-        { place: "Panvel Railway Station",            distance: "~6 min drive" },
-        { place: "Belapur–Uran Local Rail",           distance: "Operational" },
-        { place: "Proposed Metro Link (MTHL)",        distance: "MMRDA planned" }
+        { place: "Alibaug–Virar Corridor", distance: "126 km, under construction" },
+        { place: "Atal Setu (MTHL)", distance: "~15 min to S. Mumbai" },
+        { place: "Navi Mumbai Int'l Airport (NMIA)", distance: "~22 min drive" },
+        { place: "JNPT Port", distance: "~18 min drive" },
+        { place: "Panvel Railway Station", distance: "~6 min drive" },
+        { place: "Belapur–Uran Local Rail", distance: "Operational" },
+        { place: "Proposed Metro Link (MTHL)", distance: "MMRDA planned" }
       ],
       mapEmbed:
         "https://www.google.com/maps?q=Alibaug%2C%20Maharashtra&output=embed"
@@ -254,23 +254,23 @@ const SITE_DATA = {
       ],
       plotDetails: [
         // { label: "Project Type",   value: "Commercial Investment Plots" },
-        { label: "Location",       value: "Mumbai 3.0 Belt" },
-        { label: "Unit",           value: "1 Guntha = 1,089 sq.ft" },
+        { label: "Location", value: "Mumbai 3.0 Belt" },
+        { label: "Unit", value: "1 Guntha = 1,089 sq.ft" },
         { label: "Starting Price", value: "₹ 1.5 Lakh per Guntha" },
-        { label: "Title",          value: "7/12 Verified, Clear Title" },
-        { label: "Booking",        value: "Token amount + written agreement" },
-        { label: "Registration",   value: "Sale Deed with our assistance" },
-        { label: "Mutation",       value: "7/12 mutation support" },
-        { label: "Site Visit",     value: "Arranged on request" },
-        { label: "Availability",   value: "Registration Open" }
+        { label: "Title", value: "7/12 Verified, Clear Title" },
+        { label: "Booking", value: "Token amount + written agreement" },
+        { label: "Registration", value: "Sale Deed with our assistance" },
+        { label: "Mutation", value: "7/12 mutation support" },
+        { label: "Site Visit", value: "Arranged on request" },
+        { label: "Availability", value: "Registration Open" }
       ],
       connectivity: [
-        { place: "Alibaug–Virar Corridor",            distance: "Nearby" },
-        { place: "Navi Mumbai Int'l Airport (NMIA)",  distance: "Accessible via Panvel" },
-        { place: "Panvel Railway Station",            distance: "Nearby" },
-        { place: "Mumbai–Pune Expressway",            distance: "Nearby" },
-        { place: "JNPT Port Corridor",                distance: "Nearby" },
-        { place: "Local Markets & Commercial Hubs",   distance: "Nearby" }
+        { place: "Alibaug–Virar Corridor", distance: "Nearby" },
+        { place: "Navi Mumbai Int'l Airport (NMIA)", distance: "Accessible via Panvel" },
+        { place: "Panvel Railway Station", distance: "Nearby" },
+        { place: "Mumbai–Pune Expressway", distance: "Nearby" },
+        { place: "JNPT Port Corridor", distance: "Nearby" },
+        { place: "Local Markets & Commercial Hubs", distance: "Nearby" }
       ],
       mapEmbed:
         "https://www.google.com/maps?q=Panvel%2C%20Maharashtra&output=embed"
@@ -288,11 +288,11 @@ const SITE_DATA = {
      3. NAVIGATION (Main Menu)
      ===================================================================== */
   navigation: [
-    { label: "Home",       route: "/" },
+    { label: "Home", route: "/" },
     { label: "Mumbai 3.0", route: "/mumbai-3.0" },
-    { label: "About Us",   route: "/about" },
-    { label: "Projects",   route: "/projects" },
-    { label: "Why Us",     route: "/why-us" },
+    { label: "About Us", route: "/about" },
+    { label: "Projects", route: "/projects" },
+    { label: "Why Us", route: "/why-us" },
     { label: "Contact Us", route: "/contact" }
   ],
 
@@ -359,7 +359,7 @@ const SITE_DATA = {
       },
       {
         title: "Navi Mumbai International Airport",
-        image: "/images/Hero_mumbai3_0.jpg",
+        image: "/images/mumbai_3_0_airport.jpg",
         description: "Located close to the brand-new international airport, bringing rapid development, high rental demand, and great property value growth."
       }
     ],
