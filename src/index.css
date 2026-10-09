@@ -46,7 +46,7 @@
   --serif: "Merriweather", Georgia, serif;
   --sans: "Merriweather Sans", "Merriweather", system-ui, -apple-system, sans-serif;
 
-  --header-h: 76px;
+  --header-h: 112px;
   --radius: 20px;
   --ease-spring: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -281,7 +281,7 @@ p {
   }
 }
 
-/* ---------- Header (Transparent Floating with White Text -> Frosted Glass on Scroll) ---------- */
+/* ---------- Sticky Header (Always Visible) ---------- */
 .site-header {
   position: fixed;
   top: 0;
@@ -290,23 +290,20 @@ p {
   width: 100%;
   z-index: 1000;
   height: var(--header-h);
-  background: transparent;
-  backdrop-filter: none;
-  -webkit-backdrop-filter: none;
-  border-bottom: 1px solid transparent;
-  box-shadow: none;
+  background: rgba(253, 250, 248, 0.97);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(228, 209, 205, 0.7);
+  box-shadow: 0 4px 24px rgba(40, 10, 12, 0.07);
   padding: 0;
   box-sizing: border-box;
-  transition: height 0.35s cubic-bezier(0.16, 1, 0.3, 1), background 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease, backdrop-filter 0.35s ease;
+  overflow: visible;
+  transition: box-shadow 0.3s ease;
 }
 
 .site-header.scrolled {
-  height: 68px;
-  background: rgba(253, 250, 248, 0.95);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  box-shadow: 0 10px 30px rgba(40, 10, 12, 0.08);
-  border-bottom: 1px solid rgba(228, 209, 205, 0.7);
+  box-shadow: 0 10px 30px rgba(40, 10, 12, 0.10);
+  border-bottom-color: rgba(228, 209, 205, 0.9);
 }
 
 .scroll-progress {
@@ -343,59 +340,37 @@ p {
   display: none;
 }
 
+/* Nav links always dark on sticky header */
 .logo {
   display: inline-flex;
   align-items: center;
-  gap: .6rem;
+  gap: .65rem;
   font-family: var(--serif);
   font-size: 1.38rem;
   font-weight: 600;
   letter-spacing: -0.01em;
   text-decoration: none;
-  color: #ffffff;
-  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s var(--ease-spring), color 0.3s ease;
-}
-
-.logo-icon {
-  color: #ffffff;
-  stroke-width: 2.2;
-  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
-  transition: color 0.3s ease, transform 0.3s var(--ease-spring);
-}
-
-.logo:hover {
-  transform: scale(1.03);
-}
-
-.logo:hover .logo-icon {
-  transform: rotate(-6deg) scale(1.1);
-  color: var(--gold-warm);
-}
-
-.logo em {
-  font-style: normal;
-  font-weight: 400;
-  color: var(--gold-warm);
-  margin-left: 2px;
-}
-
-/* Scrolled Header Text Colors */
-.site-header.scrolled .logo {
-  color: var(--primary);
+  color: var(--brown);
   text-shadow: none;
+  transition: transform 0.3s var(--ease-spring);
 }
 
-.site-header.scrolled .logo-icon {
-  color: var(--secondary);
-  filter: none;
+/* Logo image styles */
+.logo-img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+  transition: transform 0.3s var(--ease-spring);
 }
 
-.site-header.scrolled .logo em {
-  color: var(--secondary);
+.logo:hover .logo-img,
+.logo-pill-badge:hover .logo-img {
+  transform: scale(1.06);
 }
 
-/* ---------- Desktop Navigation (Image 1 Layout) ---------- */
+/* ---------- Desktop Navigation ---------- */
 .desktop-nav {
   display: flex;
   align-items: center;
@@ -405,33 +380,32 @@ p {
 
 .desktop-nav a.nav-link {
   text-decoration: none;
-  font-weight: 400;
-  font-size: 1rem;
+  font-weight: 500;
+  font-size: 0.97rem;
   letter-spacing: -0.01em;
   padding: 0.5rem 0.2rem;
-  color: #ffffff;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+  color: var(--brown);
+  text-shadow: none;
   position: relative;
-  transition: color .2s ease, opacity 0.2s ease;
+  transition: color .2s ease;
   white-space: nowrap;
 }
 
 .desktop-nav a.nav-link:hover {
-  color: #ffffff;
-  opacity: 0.9;
+  color: var(--primary);
 }
 
-/* Glowing active underline bar matching Image 1 */
+/* Active underline bar */
 .desktop-nav a.nav-link::after {
   content: "";
   position: absolute;
   bottom: -6px;
   left: 0;
   right: 0;
-  height: 2.8px;
-  background: #ffffff;
+  height: 2.5px;
+  background: var(--primary);
   border-radius: 999px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 2px 5px rgba(0, 0, 0, 0.35);
+  box-shadow: none;
   transform: scaleX(0);
   transform-origin: center;
   transition: transform 0.25s var(--ease-spring);
@@ -441,20 +415,9 @@ p {
   transform: scaleX(1);
 }
 
-/* Scrolled nav links */
-.site-header.scrolled .desktop-nav a.nav-link {
-  color: var(--brown);
-  text-shadow: none;
-}
-
-.site-header.scrolled .desktop-nav a.nav-link:hover,
-.site-header.scrolled .desktop-nav a.nav-link.active {
+.desktop-nav a.nav-link.active {
   color: var(--primary);
-}
-
-.site-header.scrolled .desktop-nav a.nav-link::after {
-  background: var(--primary);
-  box-shadow: none;
+  font-weight: 600;
 }
 
 .header-action {
@@ -551,13 +514,13 @@ p {
 
 /* Active close button circle */
 .mobile-circle-btn.active {
-  background: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.4);
-  color: #ffffff;
+  background: rgba(115, 17, 18, 0.08);
+  border-color: rgba(115, 17, 18, 0.3);
+  color: var(--primary);
 }
 
 .mobile-circle-btn.active .circle-btn-icon {
-  color: #ffffff;
+  color: var(--primary);
 }
 
 /* ---------- Mobile Dropdown Drawer (Image 3 Layout) ---------- */
@@ -672,37 +635,28 @@ p {
   border-color: rgba(37, 211, 102, 0.8);
 }
 
-/* Logo Pill Badge matching Image 2 & 3 */
+/* Logo Pill Badge — no background, logo directly */
 .logo-pill-badge {
   display: inline-flex;
   align-items: center;
-  gap: 0.55rem;
-  padding: 0.4rem 0.95rem;
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.95);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+  justify-content: center;
+  padding: 0;
+  background: none;
+  border: none;
+  box-shadow: none;
   text-decoration: none;
-  color: var(--brown) !important;
-  text-shadow: none !important;
-  font-size: 1.18rem;
-  font-weight: 700;
-  transition: transform 0.25s var(--ease-spring), box-shadow 0.25s ease;
+  transition: transform 0.28s var(--ease-spring);
 }
 
-.logo-pill-badge .logo-icon {
-  color: var(--brown) !important;
-  filter: none !important;
-}
-
-.logo-pill-badge em {
-  color: var(--clay) !important;
-  font-style: normal;
-  font-weight: 500;
+.logo-pill-badge .logo-img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  display: block;
 }
 
 .logo-pill-badge:hover {
-  transform: scale(1.03);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
+  transform: scale(1.06);
 }
 
 /* Mobile Backdrop Overlay */
@@ -751,39 +705,16 @@ p {
   z-index: 1;
 }
 
-.hero-img {
+.hero-vid {
   position: absolute;
-  top: -40px;
+  top: 0;
   left: 0;
   width: 100%;
-  height: calc(100% + 80px);
-  min-width: 100%;
-  min-height: 100%;
-  max-width: none !important;
+  height: 100%;
   object-fit: cover;
   object-position: center center;
-  animation: kenBurns 26s ease-in-out infinite alternate;
-  will-change: transform;
-  opacity: 0;
-  transition: opacity 0.8s ease-in-out;
-}
-
-.hero-img.is-loaded {
-  opacity: 1;
-}
-
-@keyframes kenBurns {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.05);
-  }
-
-  100% {
-    transform: scale(1.02);
-  }
+  z-index: 0;
+  pointer-events: none;
 }
 
 /* Warm Golden Sunflare coming from top-right */
@@ -2837,6 +2768,41 @@ form:hover {
 
 .site-footer .logo {
   color: var(--cream);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.35rem;
+  font-family: var(--serif);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.footer-logo-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(221, 167, 65, 0.35);
+  padding: 3px;
+  flex-shrink: 0;
+  transition: transform 0.3s var(--ease-spring), box-shadow 0.3s ease;
+}
+
+.footer-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.footer-logo:hover .footer-logo-badge {
+  transform: translateY(-2px) scale(1.06);
+  box-shadow: 0 8px 24px rgba(221, 167, 65, 0.35);
+  border-color: rgba(221, 167, 65, 0.7);
 }
 
 .site-footer .logo-icon {
@@ -3286,25 +3252,12 @@ body.no-scroll {
    ADVANCED RESPONSIVE BREAKPOINTS (Mobile & Tablet Optimization)
    ========================================================== */
 
-/* Header Mobile Menu Active State */
+/* Header Mobile Menu Active State — keep light frosted glass sticky header */
 .site-header.menu-active {
-  background: rgba(28, 18, 13, 0.98) !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-  border-bottom: 1px solid rgba(212, 163, 115, 0.25) !important;
-}
-
-.site-header.menu-active .logo {
-  color: #ffffff !important;
-  text-shadow: none;
-}
-
-.site-header.menu-active .logo-icon {
-  color: #ffffff !important;
-}
-
-.site-header.menu-active .logo em {
-  color: var(--gold-warm) !important;
+  background: rgba(253, 250, 248, 0.98) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border-bottom: 1px solid rgba(228, 209, 205, 0.9) !important;
 }
 
 /* ---------- Tablet Landscape & Small Laptops (<= 1024px) ---------- */
@@ -3330,7 +3283,7 @@ body.no-scroll {
 /* ---------- Tablet Portrait (<= 960px) ---------- */
 @media (max-width: 960px) {
   :root {
-    --header-h: 70px;
+    --header-h: 76px;
   }
 
   .site-header {
@@ -3341,13 +3294,20 @@ body.no-scroll {
     padding: 0 1.25rem;
   }
 
-  .logo {
-    font-size: 1.2rem;
+  .logo-pill-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
   }
 
-  .logo-icon {
-    width: 24px;
-    height: 24px;
+  .logo-pill-badge .logo-img,
+  .logo-img {
+    width: 60px;
+    height: 60px;
+    max-height: 60px;
+    max-width: 60px;
+    object-fit: contain;
   }
 
   .desktop-nav {
@@ -3438,7 +3398,7 @@ body.no-scroll {
 /* ---------- Mobile Phones (<= 768px) ---------- */
 @media (max-width: 768px) {
   :root {
-    --header-h: 70px;
+    --header-h: 76px;
   }
 
   .wrap {
@@ -3473,7 +3433,7 @@ body.no-scroll {
     height: 100%;
   }
 
-  .hero-img,
+  .hero-vid,
   .banner-bg-img {
     top: 0 !important;
     left: 0 !important;
@@ -3887,17 +3847,26 @@ body.no-scroll {
 
 /* ---------- Small Phones (<= 480px) ---------- */
 @media (max-width: 480px) {
+  :root {
+    --header-h: 70px;
+  }
+
   .header-container {
     padding: 0 1rem;
   }
 
-  .logo {
-    font-size: 1.12rem;
+  .logo-pill-badge .logo-img,
+  .logo-img {
+    width: 52px;
+    height: 52px;
+    max-height: 52px;
+    max-width: 52px;
+    object-fit: contain;
   }
 
-  .logo-icon {
-    width: 22px;
-    height: 22px;
+  .mobile-circle-btn {
+    width: 42px;
+    height: 42px;
   }
 
   .wrap {

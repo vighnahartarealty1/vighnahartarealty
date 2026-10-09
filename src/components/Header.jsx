@@ -57,11 +57,11 @@ export default function Header({ isHidden = false }) {
         <div className="header-container">
           {/* Brand Logo */}
           <Link to="/" className="logo logo-pill-badge" aria-label="Vighnaharta Realty home" onClick={() => setMenuOpen(false)}>
-            <svg className="logo-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="m8 3 4 8 5-5 5 15H2L8 3z" />
-            </svg>
-            <span>Vighnaharta <em>Realty</em></span>
+            <img 
+              src="/images/vighnaharta_logo.png" 
+              alt="Vighnaharta Realty" 
+              className="logo-img" 
+            />
           </Link>
 
           {/* Desktop Nav: Clean single row with active bottom underline bar (Image 1) */}

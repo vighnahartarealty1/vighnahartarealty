@@ -9,9 +9,14 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="wrap footer-inner">
         <div>
-          <Link to="/" className="logo" aria-label="Vighnaharta Realty home">
-            <i className="fa-solid fa-building-columns" style={{ fontSize: '22px', color: 'var(--clay,#c9a96e)' }} />
-            <span>Vighnaharta <em>Realty</em></span>
+          <Link to="/" className="logo footer-logo" aria-label="Vighnaharta Realty home">
+            <div className="footer-logo-badge">
+              <img 
+                src="/images/vighnaharta_logo.png" 
+                // alt="Vighnaharta Realty" 
+                className="footer-logo-img" 
+              />
+            </div>
           </Link>
           <p className="tagline">Thoughtfully chosen. Clearly presented.</p>
 
