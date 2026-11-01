@@ -53,9 +53,9 @@ const SITE_DATA = {
 
     /* Why Choose Us */
     whyChooseUs: [
-      { icon: "fa-solid fa-circle-check", title: "Verified 7/12 Records", text: "Every plot's 7/12 extract is reviewed in detail — owner, survey number, area and any encumbrance." },
-      { icon: "fa-solid fa-link", title: "Clean Title Chain", text: "We cross-check the 8A record and follow the title trail so there are no surprises later." },
-      { icon: "fa-solid fa-location-dot", title: "Inside the Mumbai 3.0 Belt", text: "Plots placed in the Uran–Panvel–Pen region, close to NMIA, Atal Setu and JNPT." },
+      { icon: "fa-solid fa-circle-check", title: "Verified 7/12", text: "Every plot's 7/12 extract is reviewed in detail — owner, survey number, area and any encumbrance." },
+      { icon: "fa-solid fa-link", title: "Clean Title", text: "We cross-check the 8A record and follow the title trail so there are no surprises later." },
+      // { icon: "fa-solid fa-location-dot", title: "Inside the Mumbai 3.0 Belt", text: "Plots placed in the Uran–Panvel–Pen region, close to NMIA, Atal Setu and JNPT." },
       { icon: "fa-solid fa-binoculars", title: "Site Visits, Not Just Photos", text: "Walk the land, check the access road and boundary, and see the surroundings before you commit." },
       { icon: "fa-solid fa-file-signature", title: "Clear Written Agreement", text: "Plot details, agreed price and registration timeline are put in writing at the time of booking." },
       { icon: "fa-solid fa-building-columns", title: "Registration Support", text: "We coordinate the sale deed, stamp duty guidance and sub-registrar formalities so you don't chase papers." },
@@ -66,7 +66,6 @@ const SITE_DATA = {
     /* Home page stats */
     stats: [
       { value: "124+", label: "Villages in the Mumbai 3.0 Belt" },
-      { value: "6", label: "Major Infra Projects Nearby" },
       { value: "100%", label: "Verified 7/12 Titles" },
       { value: "Free", label: "Site Visit & Consultation" }
     ],
@@ -78,9 +77,10 @@ const SITE_DATA = {
       whatsapp: "919000000000", // VERIFY-CLIENT dummy (country code + number)
       email: "info@vighnahartarealty.com", // VERIFY-CLIENT
       emailAlt: "sales@vighnahartarealty.com", // VERIFY-CLIENT
-      address: "Panvel, Navi Mumbai, Mumbai Metropolitan Region (MMR), Maharashtra", // Mumbai MMR office
+      address: "510, V Times Square, Sector 15, CBD Belapur, Navi Mumbai - 400614", // Mumbai MMR office
       officeHours: "Monday – Saturday : 10:00 AM – 7:00 PM", // VERIFY-CLIENT
-      mapEmbed: "https://www.google.com/maps?q=Panvel%2C%20Navi%20Mumbai%2C%20Maharashtra&output=embed"
+      mapEmbed: "https://maps.google.com/maps?q=V+Times+Square,+Palm+Beach+Rd,+Sector+15,+CBD+Belapur,+Navi+Mumbai,+Maharashtra+400614&t=&z=16&ie=UTF8&iwloc=&output=embed",
+      mapUrl: "https://maps.app.goo.gl/8adx9fZYdQp27XPa2"
     },
 
     social: [
@@ -100,14 +100,15 @@ const SITE_DATA = {
     /* ---------------------------- PROJECT 1 ---------------------------- */
     {
       id: "mumbai-3-entry-plots",
-      name: "Mumbai 3.0 Entry Plots",
+      // name: "Mumbai 3.0 Entry Plots",
+      name: "Phase 1",
       tagline: "An early, affordable way into Mumbai's next growth belt",
       // type: "Investment Plots",
       status: "Available",
       featured: true,
       city: "Panvel",
       location: "Uran – Panvel – Pen Belt, Mumbai 3.0",
-      priceFrom: "₹ 3.50 Lakh*",
+      priceFrom: "₹ 5 Lakh*",
       priceNote: "Per Guntha (1,089 sq.ft), starting price",
       plotSizes: ["1 Guntha – 1,089 sq.ft", "Multiple Gunthas on request"],
       area: "Contact for details",
@@ -160,14 +161,15 @@ const SITE_DATA = {
     /* ---------------------------- PROJECT 2 ---------------------------- */
     {
       id: "mumbai-3-premium-plots",
-      name: "Mumbai 3.0 Premium Corridor Plots",
+      // name: "Mumbai 3.0 Premium Corridor Plots",
+      name: "Phase 2",
       tagline: "Plots closer to the action for buyers who want stronger positioning",
       // type: "Investment Plots",
       status: "Available",
       featured: true,
       city: "Alibaug",
       location: "Mumbai 3.0 Belt — Alibaug–Virar Corridor side",
-      priceFrom: "₹ 5 Lakh*",
+      priceFrom: "₹ 4 Lakh*",
       priceNote: "Per Guntha (1,089 sq.ft), starting price",
       plotSizes: ["1 Guntha – 1,089 sq.ft", "Multiple Gunthas on request"],
       area: "Contact for details",
@@ -220,14 +222,15 @@ const SITE_DATA = {
     /* ---------------------------- PROJECT 3 ---------------------------- */
     {
       id: "mumbai-3-commercial-investment-plots",
-      name: "Mumbai 3.0 Commercial Investment Plots",
+      // name: "Mumbai 3.0 Commercial Investment Plots",
+      name: "Phase 3",
       tagline: "Strategic commercial and investment plots in the emerging Mumbai 3.0 corridor",
       // type: "Commercial Investment Plots",
       status: "Available",
       featured: false,
       city: "Mumbai 3.0",
       location: "Mumbai 3.0 Belt, Raigad",
-      priceFrom: "₹ 4 Lakh*",
+      priceFrom: "₹ 3.5 Lakh*",
       priceNote: "Per Guntha (1,089 sq.ft), starting price",
       plotSizes: ["1 Guntha – 1,089 sq.ft", "Multiple Gunthas on request"],
       area: "Contact for details",
@@ -669,6 +672,7 @@ export const SITE = {
   address: company.contact.address,
   officeHours: company.contact.officeHours,
   mapEmbed: company.contact.mapEmbed,
+  mapUrl: company.contact.mapUrl || company.contact.mapEmbed,
   heroImage: company.heroImage,
   aboutImage: company.aboutImage,
   aboutImage2: company.aboutImage2,

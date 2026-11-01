@@ -150,15 +150,15 @@ p {
 /* ---------- Ambient Interactive Cursor Glow ---------- */
 .ambient-cursor-glow {
   position: fixed;
-  top: -160px;
-  left: -160px;
-  width: 320px;
-  height: 320px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(221, 167, 65, 0.28) 0%, rgba(221, 167, 65, 0.08) 45%, transparent 70%);
+  top: 0;
+  left: 0;
+  width: 600px;
+  height: 600px;
+  margin-left: -300px;
+  margin-top: -300px;
+  background: radial-gradient(circle, rgba(221, 167, 65, 0.10) 0%, rgba(221, 167, 65, 0.04) 35%, transparent 65%);
   pointer-events: none;
   z-index: 9999;
-  mix-blend-mode: normal;
   will-change: transform;
 }
 
@@ -5034,7 +5034,7 @@ background: linear-gradient(
 
 .m3-infrastructure-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.5rem;
 }
 

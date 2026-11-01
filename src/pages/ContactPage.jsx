@@ -101,7 +101,13 @@ export default function ContactPage() {
             </ScrollReveal>
 
             <ScrollReveal animation="fade-up" delay={240}>
-              <div className="ct-info-card" id="contact-card-visit">
+              <a 
+                href={SITE.mapUrl || SITE.mapEmbed} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="ct-info-card" 
+                id="contact-card-visit"
+              >
                 <div className="ct-card-icon-wrap">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
@@ -110,7 +116,7 @@ export default function ContactPage() {
                 </div>
                 <span className="ct-card-label">Visit Us</span>
                 <span className="ct-card-value ct-card-address">{SITE.address}</span>
-              </div>
+              </a>
             </ScrollReveal>
           </div>
         </div>
@@ -125,13 +131,13 @@ export default function ContactPage() {
               <div className="ct-map-area">
                 <iframe 
                   title="Vighnaharta Realty Mumbai / Navi Mumbai office location"
-                  src={SITE.mapEmbed || "https://www.google.com/maps?q=Panvel%2C%20Navi%20Mumbai%2C%20Maharashtra&output=embed"} 
+                  src={SITE.mapEmbed} 
                   loading="lazy"
                   allowFullScreen
                   referrerPolicy="no-referrer-when-downgrade"
                 />
                 <a 
-                  href="https://www.google.com/maps/dir//Panvel,+Navi+Mumbai,+Maharashtra" 
+                  href={SITE.mapUrl || SITE.mapEmbed} 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="ct-directions-btn"

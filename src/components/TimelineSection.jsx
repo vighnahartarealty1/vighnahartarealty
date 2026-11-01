@@ -64,7 +64,7 @@ export default function TimelineSection() {
         </div>
         <div className="timeline-cta">
           <p>Want to be part of the next chapter?</p>
-          <a href="#contact" className="btn btn-brown btn-glow">Talk to our team</a>
+          <a href="/contact" className="btn btn-brown btn-glow">Talk to our team</a>
         </div>
       </div>
     </section>

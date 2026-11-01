@@ -21,11 +21,6 @@ export default function WhyUsPage() {
       title: "High Growth Corridors",
       desc: "Carefully researched investment pockets in Mumbai 3.0, Navi Mumbai, Panvel, Uran, and Raigad corridors with high capital appreciation potential.",
       icon: "fa-solid fa-chart-line"
-    },
-    {
-      title: "Post-Sale Assistance",
-      desc: "We assist with architectural consultation, municipal water connection, boundary protection, and site management.",
-      icon: "fa-solid fa-shield-halved"
     }
   ];
 
