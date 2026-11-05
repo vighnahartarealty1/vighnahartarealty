@@ -694,6 +694,22 @@ p {
   background: #fcf9f5;
 }
 
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: clamp(9rem, 24vh, 16rem);
+  background: linear-gradient(
+    180deg,
+    rgba(253, 250, 248, 0) 0%,
+    rgba(253, 250, 248, 0.14) 34%,
+    rgba(253, 250, 248, 0.55) 68%,
+    #fdfaf8 100%
+  );
+  pointer-events: none;
+  z-index: 2;
+}
+
 .hero-bg-wrapper {
   position: absolute;
   top: 0;
@@ -2323,11 +2339,20 @@ a.ct-info-card {
 }
 
 .ct-card-value {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
   font-size: 1.02rem;
   font-weight: 600;
   color: var(--brown);
   line-height: 1.5;
   word-break: break-word;
+}
+
+.ct-card-value a {
+  display: block;
+  color: var(--brown);
+  text-decoration: none;
 }
 
 .ct-card-address {
@@ -4121,6 +4146,7 @@ body.no-scroll {
    SECTION A: HERO SECTION (WARM LUXURY ESPRESSO HERO)
    ------------------------------------------------------------------------- */
 .m3-hero-section {
+  --hero-fade-color: var(--cream);
   position: relative;
   min-height: calc(85vh - var(--header-h));
   display: flex;
@@ -4131,6 +4157,26 @@ body.no-scroll {
   background-color: var(--brown-deep);
   color: #ffffff;
   overflow: hidden;
+}
+
+.m3-hero-section:not(.page-banner) {
+  --hero-fade-color: #ffffff;
+}
+
+.m3-hero-section::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: clamp(9rem, 24vh, 16rem);
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--hero-fade-color) transparent 100%) 0%,
+    color-mix(in srgb, var(--hero-fade-color) transparent 86%) 34%,
+    color-mix(in srgb, var(--hero-fade-color) transparent 45%) 68%,
+    var(--hero-fade-color) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
 }
 
 .m3-hero-backdrop {
@@ -4210,7 +4256,7 @@ background: linear-gradient(
 
 .m3-hero-wrap {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   display: flex;
   justify-content: center;
   text-align: center;

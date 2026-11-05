@@ -4,6 +4,7 @@ import { SITE } from '../data/siteData';
 
 export default function Footer() {
   const year = new Date().getFullYear();
+  const contactNumbers = [SITE.phoneDisplay, SITE.phoneAlt, SITE.phoneAlt2].filter(Boolean);
 
   return (
     <footer className="site-footer">
@@ -44,17 +45,28 @@ export default function Footer() {
             <div className="footer-reach-item">
               <i className="fa-solid fa-location-dot reach-icon" />
               <div className="reach-text">
-                <span>Panvel, Navi Mumbai, Mumbai Metropolitan Region (MMR), Maharashtra, India</span>
+                <span>510, v times square , sec 15 , CBD Belapur , Navi Mumbai - 400614</span>
               </div>
             </div>
 
             <div className="footer-reach-item">
               <i className="fa-solid fa-phone reach-icon" />
               <div className="reach-text">
-                <a href={`tel:${SITE.phoneDisplay}`}>{SITE.phoneDisplay}</a>
-                {SITE.phoneAlt && (
-                  <a href={`tel:${SITE.phoneAlt}`}>{SITE.phoneAlt}</a>
-                )}
+                {contactNumbers.map((number, index) => (
+                  <div className="footer-phone-line" key={number}>
+                    <a
+                      href={
+                        index === 0
+                          ? `https://wa.me/${SITE.whatsappNumber}?text=${encodeURIComponent('Hello Vighnaharta Realty, I would like to enquire about your properties.')}`
+                          : `tel:${number.replace(/\s+/g, '')}`
+                      }
+                      target={index === 0 ? '_blank' : undefined}
+                      rel={index === 0 ? 'noopener noreferrer' : undefined}
+                    >
+                      {number}
+                    </a>
+                  </div>
+                ))}
               </div>
             </div>
 

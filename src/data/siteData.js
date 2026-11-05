@@ -72,9 +72,10 @@ const SITE_DATA = {
 
     /* Contact details */
     contact: {
-      phone: "+91 90000 00000", // VERIFY-CLIENT dummy
-      phoneAlt: "+91 90000 00001", // VERIFY-CLIENT dummy
-      whatsapp: "919000000000", // VERIFY-CLIENT dummy (country code + number)
+      phone: "+91 9152389090", // VERIFY-CLIENT dummy
+      phoneAlt: "+91 9152999971", // VERIFY-CLIENT
+      phoneAlt2: "+91 9152999972", // VERIFY-CLIENT      
+      whatsapp: "919152389090", // VERIFY-CLIENT dummy (country code + number)
       email: "info@vighnahartarealty.com", // VERIFY-CLIENT
       emailAlt: "sales@vighnahartarealty.com", // VERIFY-CLIENT
       address: "510, V Times Square, Sector 15, CBD Belapur, Navi Mumbai - 400614", // Mumbai MMR office
@@ -667,6 +668,7 @@ export const SITE = {
   whatsappNumber: company.contact.whatsapp,
   phoneDisplay: company.contact.phone,
   phoneAlt: company.contact.phoneAlt,
+  phoneAlt2: company.contact.phoneAlt2,
   email: company.contact.email,
   emailAlt: company.contact.emailAlt,
   address: company.contact.address,
