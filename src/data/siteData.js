@@ -76,8 +76,8 @@ const SITE_DATA = {
       phoneAlt: "+91 9152999971", // VERIFY-CLIENT
       phoneAlt2: "+91 9152999972", // VERIFY-CLIENT      
       whatsapp: "919152389090", // VERIFY-CLIENT dummy (country code + number)
-      email: "info@vighnahartarealty.com", // VERIFY-CLIENT
-      emailAlt: "sales@vighnahartarealty.com", // VERIFY-CLIENT
+      email: "vighnahartarealty1@gmail.com", // VERIFY-CLIENT
+      emailAlt: "vighnahartarealty1@gmail.com", // VERIFY-CLIENT
       address: "510, V Times Square, Sector 15, CBD Belapur, Navi Mumbai - 400614", // Mumbai MMR office
       officeHours: "Monday – Saturday : 10:00 AM – 7:00 PM", // VERIFY-CLIENT
       mapEmbed: "https://maps.google.com/maps?q=V+Times+Square,+Palm+Beach+Rd,+Sector+15,+CBD+Belapur,+Navi+Mumbai,+Maharashtra+400614&t=&z=16&ie=UTF8&iwloc=&output=embed",
